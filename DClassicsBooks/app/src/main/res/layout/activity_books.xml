@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary">
+
+    <!-- === APP BAR === -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_books"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_primary"
+        app:elevation="0dp">
+
+        <!-- Toolbar -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingHorizontal="@dimen/screen_padding">
+
+            <TextView
+                android:id="@+id/tv_books_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/label_books"
+                android:textColor="@color/text_primary"
+                android:textSize="22sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btn_books_more"/>
+
+            <ImageButton
+                android:id="@+id/btn_books_more"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_more_vert"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="More options"
+                android:padding="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Thin gold accent line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@color/divider"/>
+
+        <!-- === TAB LAYOUT === -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout_books"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/bg_secondary"
+            app:tabTextColor="@color/text_secondary"
+            app:tabSelectedTextColor="@color/gold_primary"
+            app:tabIndicatorColor="@color/gold_primary"
+            app:tabIndicatorHeight="3dp"
+            app:tabIndicatorFullWidth="false"
+            app:tabRippleColor="@color/gold_subtle"
+            app:tabPaddingStart="0dp"
+            app:tabPaddingEnd="0dp">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_nonfiction"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_fiction"/>
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- === VIEWPAGER2 for tabs === -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp_books"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="64dp"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <!-- === BOTTOM NAVIGATION === -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/bg_secondary"
+        app:menu="@menu/bottom_navigation"
+        app:itemIconTint="@color/selector_bottom_nav"
+        app:itemTextColor="@color/selector_bottom_nav"
+        app:itemActiveIndicatorColor="@color/gold_subtle"
+        app:elevation="16dp"
+        app:selectedItemId="@id/nav_books"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

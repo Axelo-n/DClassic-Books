@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Always use the dark theme regardless of system setting -->
+    <style name="Theme.DClassicsBooks" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/gold_primary</item>
+        <item name="colorPrimaryVariant">@color/gold_dark</item>
+        <item name="colorOnPrimary">@color/text_on_gold</item>
+        <item name="colorPrimaryContainer">@color/gold_subtle</item>
+        <item name="colorOnPrimaryContainer">@color/gold_light</item>
+        <item name="colorSecondary">@color/gold_light</item>
+        <item name="colorOnSecondary">@color/text_on_gold</item>
+        <item name="android:colorBackground">@color/bg_primary</item>
+        <item name="colorBackground">@color/bg_primary</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="android:windowBackground">@color/bg_primary</item>
+        <item name="android:statusBarColor">@color/bg_primary</item>
+        <item name="android:navigationBarColor">@color/bg_secondary</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="textInputStyle">@style/Widget.App.TextInputLayout.OutlinedBox</item>
+    </style>
+</resources>

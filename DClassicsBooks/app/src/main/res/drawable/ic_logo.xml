@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="80dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Outer glow ring -->
+    <path
+        android:pathData="M24,4 C13,4 4,13 4,24 C4,35 13,44 24,44 C35,44 44,35 44,24 C44,13 35,4 24,4z"
+        android:fillColor="#1AC9A84C"/>
+    <!-- Open book base -->
+    <path
+        android:pathData="M24,13 L12,17 L12,35 L24,31 L36,35 L36,17 Z"
+        android:fillColor="#C9A84C"
+        android:fillAlpha="0.2"/>
+    <!-- Left page -->
+    <path
+        android:pathData="M12,17 L12,35 L24,31 L24,13 Z"
+        android:fillColor="#E8C87C"/>
+    <!-- Right page -->
+    <path
+        android:pathData="M24,13 L24,31 L36,35 L36,17 Z"
+        android:fillColor="#C9A84C"/>
+    <!-- Left page lines -->
+    <path
+        android:pathData="M14,21 L22,18.5 M14,24 L22,21.5 M14,27 L22,24.5"
+        android:strokeColor="#0B0B1A"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round"/>
+    <!-- Right page lines -->
+    <path
+        android:pathData="M26,18.5 L34,21 M26,21.5 L34,24 M26,24.5 L34,27"
+        android:strokeColor="#0B0B1A"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round"/>
+    <!-- Spine -->
+    <path
+        android:pathData="M24,13 L24,31"
+        android:strokeColor="#0B0B1A"
+        android:strokeWidth="1.5"/>
+</vector>

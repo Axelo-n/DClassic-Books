@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp"
+    app:cardCornerRadius="@dimen/corner_lg"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/transparent"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_store_card"
+        android:padding="20dp">
+
+        <!-- Top row: Store name + "Open" badge -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <!-- Location pin icon with circle bg -->
+            <FrameLayout
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginEnd="14dp">
+
+                <View
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/bg_badge_genre"/>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_location_on"
+                    android:contentDescription="Store location"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_store_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="D'Classics Books — Central Jakarta"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:lineSpacingMultiplier="1.15"/>
+
+            </LinearLayout>
+
+            <!-- "Open" badge -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OPEN"
+                android:textColor="@color/success"
+                android:textSize="9sp"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.08"
+                android:background="@drawable/bg_badge_fiction"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"/>
+
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- Address row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_location_on"
+                android:contentDescription="Address"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="1dp"/>
+
+            <TextView
+                android:id="@+id/tv_store_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Jl. MH Thamrin No. 45, Menteng, Central Jakarta"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:lineSpacingMultiplier="1.3"/>
+
+        </LinearLayout>
+
+        <!-- Phone row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="14dp">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_phone"
+                android:contentDescription="Phone"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_store_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="+62 21 3920 0011"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+        <!-- Hours row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_access_time"
+                android:contentDescription="Hours"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/label_open_hours"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+        <!-- Visit Store button -->
+        <Button
+            android:id="@+id/btn_visit_store"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="@string/label_visit_store"
+            android:textColor="@color/gold_primary"
+            android:textSize="12sp"
+            android:letterSpacing="0.08"
+            android:fontFamily="sans-serif-medium"
+            android:background="@drawable/bg_button_outline"
+            android:stateListAnimator="@null"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

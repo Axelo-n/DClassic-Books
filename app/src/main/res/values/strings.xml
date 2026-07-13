@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">D\'Classics Books</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="login_subtitle">Your literary journey continues</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="btn_login">Continue Reading</string>
+    <string name="error_username_empty">Please enter your username</string>
+    <string name="error_password_empty">Please enter your password</string>
+    <string name="error_password_alphanumeric">Password must be alphanumeric only</string>
+
+    <string name="greeting_morning">Good Morning</string>
+    <string name="greeting_afternoon">Good Afternoon</string>
+    <string name="greeting_evening">Good Evening</string>
+    <string name="greeting_subtitle">What will you read today?</string>
+    <string name="featured_books">Featured Books</string>
+    <string name="our_stores">Our Stores</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_books">Books</string>
+    <string name="nav_store">Store</string>
+    <string name="action_logout">Logout</string>
+    <string name="logout_title">Logout</string>
+    <string name="logout_message">Are you sure you want to logout?</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_logout">Logout</string>
+
+    <string name="books_title">Our Collection</string>
+    <string name="tab_non_fiction">Non-Fiction</string>
+    <string name="tab_fiction">Fiction</string>
+
+    <string name="order_book">Order This Book</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="btn_buy">Place Order</string>
+    <string name="error_address_empty">Please enter your delivery address</string>
+    <string name="error_phone_empty">Please enter your phone number</string>
+    <string name="order_success_title">Order Placed!</string>
+    <string name="order_success_message">Your order has been received. We\'ll contact you shortly to confirm delivery details.</string>
+    <string name="btn_ok">Great!</string>
+    <string name="rating_label">Rating</string>
+
+    <string name="stores_title">Our Locations</string>
+    <string name="locations_count">4 locations across the city</string>
+    <string name="store_open">OPEN</string>
+    <string name="store_hours">Mon–Sat: 09:00 – 21:00</string>
+    <string name="btn_visit_store">Visit Store</string>
+
+    <string name="store_1_name">D\'Classics Books — Sudirman</string>
+    <string name="store_1_address">Jl. Jenderal Sudirman No. 45, Jakarta Pusat</string>
+    <string name="store_1_phone">+62 21 5555 0101</string>
+
+    <string name="store_2_name">D\'Classics Books — Kemang</string>
+    <string name="store_2_address">Jl. Kemang Raya No. 18, Jakarta Selatan</string>
+    <string name="store_2_phone">+62 21 5555 0202</string>
+
+    <string name="store_3_name">D\'Classics Books — Kelapa Gading</string>
+    <string name="store_3_address">Jl. Boulevard Barat No. 7, Jakarta Utara</string>
+    <string name="store_3_phone">+62 21 5555 0303</string>
+
+    <string name="store_4_name">D\'Classics Books — BSD City</string>
+    <string name="store_4_address">Jl. BSD Grand Boulevard No. 99, Tangerang</string>
+    <string name="store_4_phone">+62 21 5555 0404</string>
+</resources>

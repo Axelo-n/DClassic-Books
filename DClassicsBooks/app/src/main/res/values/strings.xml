@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">D\'Classics Books</string>
+    <string name="app_tagline">Discover Timeless Classics</string>
+
+    <!-- Login -->
+    <string name="label_welcome_back">Welcome Back</string>
+    <string name="label_sign_in">Sign In</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_sign_in">SIGN IN</string>
+    <string name="error_username_empty">Username cannot be empty</string>
+    <string name="error_password_empty">Password cannot be empty</string>
+    <string name="error_password_alphanumeric">Password must be alphanumeric</string>
+
+    <!-- Home -->
+    <string name="label_hello">Hello, %1$s!</string>
+    <string name="label_home_subtitle">What shall we read today?</string>
+    <string name="label_featured_books">Featured Books</string>
+    <string name="label_see_all">See All</string>
+    <string name="label_our_stores">Our Stores</string>
+    <string name="label_stores_subtitle">Find us near you</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_books">Books</string>
+    <string name="nav_store">Store</string>
+    <string name="nav_logout">Log Out</string>
+
+    <!-- Books -->
+    <string name="label_books">Books</string>
+    <string name="tab_nonfiction">Non-Fiction</string>
+    <string name="tab_fiction">Fiction</string>
+
+    <!-- Book Detail -->
+    <string name="label_book_detail">Book Detail</string>
+    <string name="label_buy_book">BUY NOW</string>
+    <string name="hint_address">Delivery Address</string>
+    <string name="hint_phone">Phone Number</string>
+    <string name="label_order_info">Order Information</string>
+    <string name="error_address_empty">Address cannot be empty</string>
+    <string name="error_phone_empty">Phone number cannot be empty</string>
+    <string name="error_phone_numeric">Phone number must be numeric</string>
+    <string name="dialog_success_title">Order Placed!</string>
+    <string name="dialog_success_message">A confirmation email has been sent to your email address. Thank you for your order!</string>
+    <string name="dialog_ok">OK</string>
+
+    <!-- Stores -->
+    <string name="label_stores">Our Stores</string>
+    <string name="label_visit_store">VISIT STORE</string>
+    <string name="label_open_hours">Mon – Sat, 09:00 – 21:00</string>
+
+    <!-- Logout dialog -->
+    <string name="dialog_logout_title">Log Out</string>
+    <string name="dialog_logout_message">Are you sure you want to log out?</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <!-- Dummy store data -->
+    <string name="store_1_name">D\'Classics Books — Central Jakarta</string>
+    <string name="store_1_address">Jl. MH Thamrin No. 45, Menteng, Central Jakarta</string>
+    <string name="store_1_phone">+62 21 3920 0011</string>
+
+    <string name="store_2_name">D\'Classics Books — South Jakarta</string>
+    <string name="store_2_address">Jl. Kemang Raya No. 12, Mampang, South Jakarta</string>
+    <string name="store_2_phone">+62 21 7199 0022</string>
+
+    <string name="store_3_name">D\'Classics Books — Surabaya</string>
+    <string name="store_3_address">Jl. Darmo No. 78, Wonokromo, Surabaya</string>
+    <string name="store_3_phone">+62 31 5683 0033</string>
+
+    <string name="store_4_name">D\'Classics Books — Bandung</string>
+    <string name="store_4_address">Jl. Braga No. 30, Sumur Bandung, Bandung</string>
+    <string name="store_4_phone">+62 22 4235 0044</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Android 15 (API 35) forces edge-to-edge for apps targeting SDK 35+.
+        Opt out so the system handles status bar and navigation bar layout normally.
+    -->
+    <style name="Theme.DClassicsBooks" parent="Theme.DClassicsBooks.Base">
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+    </style>
+</resources>

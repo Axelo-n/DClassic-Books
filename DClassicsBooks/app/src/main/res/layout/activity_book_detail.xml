@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary">
+
+    <!-- === COLLAPSING TOOLBAR === -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_detail"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.Material3.Dark.ActionBar"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/bg_primary"
+            app:titleEnabled="false"
+            android:fitsSystemWindows="true">
+
+            <!-- Book Cover Image -->
+            <ImageView
+                android:id="@+id/iv_book_cover_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:contentDescription="Book Cover"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.5"/>
+
+            <!-- Gradient overlay -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_carousel_gradient"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.1"/>
+
+            <!-- Back Button in Toolbar -->
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_detail"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="@drawable/ic_arrow_back"
+                app:navigationIconTint="@color/text_primary"
+                android:background="@color/transparent"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- === SCROLL CONTENT === -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="32dp">
+
+            <!-- === BOOK INFO CARD === -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/screen_padding"
+                android:paddingTop="24dp">
+
+                <!-- Genre Badge -->
+                <TextView
+                    android:id="@+id/tv_book_genre_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NON-FICTION"
+                    android:textColor="@color/gold_primary"
+                    android:textSize="10sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:letterSpacing="0.1"
+                    android:background="@drawable/bg_badge_genre"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="4dp"/>
+
+                <!-- Book Title -->
+                <TextView
+                    android:id="@+id/tv_book_title_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Meditations"
+                    android:textColor="@color/text_primary"
+                    android:textSize="28sp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:lineSpacingMultiplier="1.2"
+                    android:layout_marginTop="12dp"/>
+
+                <!-- Author -->
+                <TextView
+                    android:id="@+id/tv_book_author_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="by Marcus Aurelius"
+                    android:textColor="@color/gold_primary"
+                    android:textSize="14sp"
+                    android:fontFamily="serif"
+                    android:textStyle="italic"
+                    android:layout_marginTop="6dp"/>
+
+                <!-- Rating row -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_star"
+                        android:contentDescription="Star"/>
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_star"
+                        android:contentDescription="Star"/>
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_star"
+                        android:contentDescription="Star"/>
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_star"
+                        android:contentDescription="Star"/>
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_star"
+                        android:contentDescription="Star"/>
+                    <TextView
+                        android:id="@+id/tv_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.9"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp"
+                        android:layout_marginStart="6dp"/>
+                </LinearLayout>
+
+                <!-- Divider -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+
+            <!-- === ORDER FORM SECTION === -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/screen_padding">
+
+                <!-- Section Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="20dp"
+                        android:background="@color/gold_primary"
+                        android:layout_marginEnd="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_order_info"
+                        android:textColor="@color/text_primary"
+                        android:textSize="18sp"
+                        android:fontFamily="serif"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <!-- Address Field -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_address"
+                    style="@style/Widget.App.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_address"
+                    app:startIconDrawable="@drawable/ic_location_on"
+                    app:startIconTint="@color/text_hint"
+                    android:layout_marginBottom="16dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPostalAddress|textMultiLine"
+                        android:minLines="2"
+                        android:imeOptions="actionNext"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_hint"
+                        android:textSize="14sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Phone Number Field -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_phone"
+                    style="@style/Widget.App.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_phone"
+                    app:startIconDrawable="@drawable/ic_phone"
+                    app:startIconTint="@color/text_hint"
+                    android:layout_marginBottom="32dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:imeOptions="actionDone"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_hint"
+                        android:textSize="14sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Buy Button -->
+                <Button
+                    android:id="@+id/btn_buy"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:text="@string/label_buy_book"
+                    android:textColor="@color/text_on_gold"
+                    android:textSize="15sp"
+                    android:letterSpacing="0.1"
+                    android:fontFamily="sans-serif-medium"
+                    android:background="@drawable/bg_button_primary"
+                    android:stateListAnimator="@null"
+                    android:drawableStart="@drawable/ic_shopping_bag"
+                    android:drawablePadding="8dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

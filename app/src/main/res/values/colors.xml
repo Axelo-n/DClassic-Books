@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Backgrounds — deep antique brown -->
+    <color name="bg_primary">#211909</color>
+    <color name="bg_secondary">#2C2210</color>
+    <color name="surface">#322715</color>
+    <color name="surface_light">#3E3119</color>
+    <color name="card">#322715</color>
+    <color name="gold_pale">#26D2B36A</color>
+
+    <!-- Gold Accent -->
+    <color name="gold_primary">#D2B36A</color>
+    <color name="gold_dark">#E7CF96</color>
+    <color name="gold_light">#B8995A</color>
+    <color name="gold_deep">#D8BE85</color>
+    <color name="gold_outline">#38D2B36A</color>
+
+    <!-- Text — cream on dark -->
+    <color name="text_primary">#F3EAD3</color>
+    <color name="text_secondary">#C2AF88</color>
+    <color name="text_hint">#8A784F</color>
+    <color name="text_on_gold">#2E2410</color>
+
+    <!-- UI -->
+    <color name="divider">#453A20</color>
+    <color name="error">#F2A099</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Genre badge colors (translucent jewel tones for dark bg) -->
+    <color name="tag_philosophy">#338B6BD8</color>
+    <color name="tag_philosophy_text">#CBB8F0</color>
+    <color name="tag_strategy">#335FA05F</color>
+    <color name="tag_strategy_text">#A8D8A8</color>
+    <color name="tag_romance">#33C05070</color>
+    <color name="tag_romance_text">#F0AFC8</color>
+    <color name="tag_dystopia">#335068C0</color>
+    <color name="tag_dystopia_text">#AFC0F0</color>
+    <color name="tag_psychology">#33C09030</color>
+    <color name="tag_psychology_text">#F0D8A0</color>
+    <color name="tag_history">#3340A0A0</color>
+    <color name="tag_history_text">#A0E0E0</color>
+    <color name="tag_fiction">#33C07840</color>
+    <color name="tag_fiction_text">#F0C8A8</color>
+    <color name="tag_classic">#339050C0</color>
+    <color name="tag_classic_text">#D8B8F0</color>
+
+    <!-- Book cover gradients (rich tones, pop on dark bg) -->
+    <color name="cover_meditations_start">#3D2468</color>
+    <color name="cover_meditations_end">#7B5AAA</color>
+    <color name="cover_artofwar_start">#1E3A1E</color>
+    <color name="cover_artofwar_end">#3A6E3A</color>
+    <color name="cover_pride_start">#6B1E3C</color>
+    <color name="cover_pride_end">#B04878</color>
+    <color name="cover_1984_start">#1A1E3A</color>
+    <color name="cover_1984_end">#3A4A8A</color>
+    <color name="cover_thinking_start">#3A3010</color>
+    <color name="cover_thinking_end">#8A7030</color>
+    <color name="cover_sapiens_start">#104040</color>
+    <color name="cover_sapiens_end">#208080</color>
+    <color name="cover_mockingbird_start">#3A1010</color>
+    <color name="cover_mockingbird_end">#883030</color>
+    <color name="cover_crime_start">#101828</color>
+    <color name="cover_crime_end">#203868</color>
+</resources>

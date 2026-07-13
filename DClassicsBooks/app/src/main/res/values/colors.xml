@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- === BACKGROUND PALETTE === -->
+    <color name="bg_primary">#0B0B1A</color>
+    <color name="bg_secondary">#13132A</color>
+    <color name="surface">#1A1A35</color>
+    <color name="surface_variant">#21213F</color>
+    <color name="card">#1E1E3A</color>
+    <color name="card_elevated">#252548</color>
+    <color name="divider">#2A2A45</color>
+
+    <!-- === GOLD ACCENT PALETTE === -->
+    <color name="gold_primary">#C9A84C</color>
+    <color name="gold_dark">#A07D30</color>
+    <color name="gold_light">#E8C87C</color>
+    <color name="gold_subtle">#33C9A84C</color>
+    <color name="gold_muted">#886B3F1A</color>
+
+    <!-- === TEXT PALETTE === -->
+    <color name="text_primary">#F0EAD6</color>
+    <color name="text_secondary">#9E8F75</color>
+    <color name="text_hint">#6A5E50</color>
+    <color name="text_on_gold">#0B0B1A</color>
+
+    <!-- === STATUS COLORS === -->
+    <color name="error">#E07080</color>
+    <color name="success">#5AAD7A</color>
+
+    <!-- === GENRE TAG COLORS === -->
+    <color name="tag_fiction">#3D5A80</color>
+    <color name="tag_nonfiction">#5C4A1A</color>
+    <color name="tag_philosophy">#3A2A5A</color>
+    <color name="tag_history">#1A4A3A</color>
+    <color name="tag_psychology">#1A3A5A</color>
+
+    <!-- === BOOK COVER COLORS === -->
+    <color name="cover_teal_dark">#0D3A4A</color>
+    <color name="cover_teal_light">#0A5A74</color>
+    <color name="cover_crimson_dark">#3A0A0A</color>
+    <color name="cover_crimson_light">#6B1F1F</color>
+    <color name="cover_forest_dark">#0A2A15</color>
+    <color name="cover_forest_light">#1A5A2A</color>
+    <color name="cover_amber_dark">#2A1800</color>
+    <color name="cover_amber_light">#5C3E0A</color>
+    <color name="cover_rose_dark">#2A0A1A</color>
+    <color name="cover_rose_light">#6B1A40</color>
+    <color name="cover_slate_dark">#0A0A18</color>
+    <color name="cover_slate_light">#2A2A40</color>
+    <color name="cover_indigo_dark">#0A0F28</color>
+    <color name="cover_indigo_light">#1A2E6B</color>
+    <color name="cover_purple_dark">#150820</color>
+    <color name="cover_purple_light">#4A1A6B</color>
+
+    <!-- === CAROUSEL COLORS === -->
+    <color name="carousel_1_dark">#2A1800</color>
+    <color name="carousel_1_light">#7A5020</color>
+    <color name="carousel_2_dark">#031A14</color>
+    <color name="carousel_2_light">#0A5A44</color>
+    <color name="carousel_3_dark">#030F28</color>
+    <color name="carousel_3_light">#0A2E6B</color>
+    <color name="carousel_4_dark">#1E0010</color>
+    <color name="carousel_4_light">#6B0A30</color>
+    <color name="carousel_5_dark">#100520</color>
+    <color name="carousel_5_light">#3A1070</color>
+
+    <!-- === UTILITY === -->
+    <color name="transparent">#00000000</color>
+    <color name="overlay_dark">#CC000000</color>
+    <color name="overlay_medium">#88000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Required by Material3 -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+</resources>
