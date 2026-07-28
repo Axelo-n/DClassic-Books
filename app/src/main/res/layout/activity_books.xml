@@ -68,7 +68,7 @@
         android:layout_gravity="bottom"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="16dp"
         app:cardCornerRadius="28dp"
         app:cardElevation="8dp"
         app:cardBackgroundColor="@color/surface"
@@ -79,7 +79,7 @@
             android:id="@+id/bottom_nav"
             style="@style/Widget.DClassicsBooks.BottomNavigationView"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
             app:menu="@menu/bottom_navigation"
             app:labelVisibilityMode="labeled"/>
 

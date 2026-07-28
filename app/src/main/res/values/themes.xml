@@ -47,6 +47,7 @@
         <item name="backgroundTint">@color/surface</item>
         <item name="elevation">0dp</item>
         <item name="itemIconSize">24dp</item>
+        <item name="paddingBottomSystemWindowInsets">false</item>
     </style>
 
     <style name="Widget.DClassicsBooks.TabLayout" parent="Widget.Material3.TabLayout">

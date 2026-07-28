@@ -118,16 +118,26 @@ public class HomeActivity extends AppCompatActivity {
         bottomNav.setOnItemSelectedListener(item -> {
             int id = item.getItemId();
             if (id == R.id.nav_books) {
-                startActivity(new Intent(this, BooksActivity.class));
-                overridePendingTransition(0, 0);
-                return true;
+                navigateToActivity(BooksActivity.class);
+                return false;
             } else if (id == R.id.nav_store) {
-                startActivity(new Intent(this, StoresActivity.class));
-                overridePendingTransition(0, 0);
-                return true;
+                navigateToActivity(StoresActivity.class);
+                return false;
             }
             return true;
         });
+
+        androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(bottomNav, (view, insets) -> {
+            view.setPadding(view.getPaddingLeft(), view.getPaddingTop(), view.getPaddingRight(), 0);
+            return insets;
+        });
+    }
+
+    private void navigateToActivity(Class<?> activityClass) {
+        Intent intent = new Intent(this, activityClass);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        startActivity(intent);
+        overridePendingTransition(0, 0);
     }
 
     private void setupDots(int count) {

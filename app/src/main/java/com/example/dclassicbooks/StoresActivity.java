@@ -52,19 +52,23 @@ public class StoresActivity extends AppCompatActivity {
         bottomNav.setOnItemSelectedListener(item -> {
             int id = item.getItemId();
             if (id == R.id.nav_home) {
-                navigateToHome();
-                return true;
+                navigateToActivity(HomeActivity.class);
+                return false;
             } else if (id == R.id.nav_books) {
-                startActivity(new Intent(this, BooksActivity.class));
-                overridePendingTransition(0, 0);
-                return true;
+                navigateToActivity(BooksActivity.class);
+                return false;
             }
             return true;
         });
+
+        androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(bottomNav, (view, insets) -> {
+            view.setPadding(view.getPaddingLeft(), view.getPaddingTop(), view.getPaddingRight(), 0);
+            return insets;
+        });
     }
 
-    private void navigateToHome() {
-        Intent intent = new Intent(this, HomeActivity.class);
+    private void navigateToActivity(Class<?> activityClass) {
+        Intent intent = new Intent(this, activityClass);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         startActivity(intent);
         overridePendingTransition(0, 0);
