@@ -14,9 +14,9 @@
     <color name="on_surface_variant">#3E3429</color>
     <color name="outline">#5C5144</color>
     <color name="outline_variant">#776B5E</color>
-    <color name="surface_container_low">#FFF1E5</color>
+    <color name="surface_container_low">#FCEEE2</color>
     <color name="surface_container">#F3E6DA</color>
-    <color name="surface_container_high">#DCCFC4</color>
+    <color name="surface_container_high">#E8DBCF</color>
 
     <color name="black">#000000</color>
     <color name="transparent">#00000000</color>
