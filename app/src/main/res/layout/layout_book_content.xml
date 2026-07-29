@@ -17,9 +17,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingHorizontal="10dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="8dp">
+        android:paddingHorizontal="@dimen/space125"
+        android:paddingTop="@dimen/space125"
+        android:paddingBottom="@dimen/space100">
 
         <TextView
             android:id="@+id/tv_genre"
@@ -30,8 +30,8 @@
             android:textAppearance="?attr/textAppearanceLabelSmall"
             android:textAllCaps="true"
             android:textColor="@color/white"
-            android:paddingHorizontal="6dp"
-            android:paddingVertical="2dp"/>
+            android:paddingHorizontal="@dimen/space075"
+            android:paddingVertical="@dimen/space025"/>
 
         <TextView
             android:id="@+id/tv_title"
@@ -42,7 +42,7 @@
             android:maxLines="2"
             android:lineHeight="20sp"
             android:ellipsize="end"
-            android:layout_marginTop="5dp"/>
+            android:layout_marginTop="@dimen/space050"/>
 
         <TextView
             android:id="@+id/tv_author"

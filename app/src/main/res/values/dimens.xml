@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="screen_padding">20dp</dimen>
-    <dimen name="card_padding">16dp</dimen>
     <dimen name="card_radius">16dp</dimen>
     <dimen name="card_radius_small">8dp</dimen>
     <dimen name="card_radius_large">24dp</dimen>
@@ -14,9 +12,22 @@
     <dimen name="text_small">11sp</dimen>
     <dimen name="icon_size">24dp</dimen>
     <dimen name="icon_size_large">32dp</dimen>
-    <dimen name="spacing_xs">4dp</dimen>
-    <dimen name="spacing_sm">8dp</dimen>
-    <dimen name="spacing_md">16dp</dimen>
-    <dimen name="spacing_lg">24dp</dimen>
-    <dimen name="spacing_xl">32dp</dimen>
+
+    <!-- Material 3 Spacing System (space100 = 8dp) -->
+    <dimen name="space025">2dp</dimen>
+    <dimen name="space050">4dp</dimen>
+    <dimen name="space075">6dp</dimen>
+    <dimen name="space100">8dp</dimen>
+    <dimen name="space125">10dp</dimen>
+    <dimen name="space150">12dp</dimen>
+    <dimen name="space175">14dp</dimen>
+    <dimen name="space200">16dp</dimen>
+    <dimen name="space250">20dp</dimen>
+    <dimen name="space300">24dp</dimen>
+    <dimen name="space400">32dp</dimen>
+    <dimen name="space500">40dp</dimen>
+    <dimen name="space600">48dp</dimen>
+    <dimen name="space700">56dp</dimen>
+    <dimen name="space800">64dp</dimen>
+    <dimen name="space900">72dp</dimen>
 </resources>

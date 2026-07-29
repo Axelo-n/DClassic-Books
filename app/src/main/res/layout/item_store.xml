@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="16dp"
+    android:layout_marginBottom="@dimen/space200"
     app:cardCornerRadius="20dp"
     app:cardElevation="0dp">
 
@@ -12,18 +12,13 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Top accent bar (gold) -->
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="4dp"/>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingHorizontal="20dp"
-            android:paddingTop="18dp"
-            android:paddingBottom="20dp">
+            android:paddingHorizontal="@dimen/space250"
+            android:paddingTop="@dimen/space200"
+            android:paddingBottom="@dimen/space250">
 
             <TextView
                 android:id="@+id/tv_store_name"
@@ -32,7 +27,7 @@
                 android:layout_weight="1"
                 android:text="Store Name"
                 android:textAppearance="?attr/textAppearanceTitleMedium"
-                android:layout_marginBottom="16dp"/>
+                android:layout_marginBottom="@dimen/space200"/>
 
             <!-- Address row -->
             <LinearLayout
@@ -40,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center_vertical"
-                android:layout_marginBottom="10dp">
+                android:layout_marginBottom="@dimen/space125">
 
                 <ImageView
                     android:layout_width="16dp"
@@ -55,7 +50,7 @@
                     android:layout_weight="1"
                     android:text="Address"
                     android:textAppearance="?attr/textAppearanceBodyMedium"
-                    android:layout_marginStart="10dp"/>
+                    android:layout_marginStart="@dimen/space125"/>
 
             </LinearLayout>
 
@@ -65,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center_vertical"
-                android:layout_marginBottom="10dp">
+                android:layout_marginBottom="@dimen/space125">
 
                 <ImageView
                     android:layout_width="16dp"
@@ -80,7 +75,7 @@
                     android:layout_weight="1"
                     android:text="Phone"
                     android:textAppearance="?attr/textAppearanceBodyMedium"
-                    android:layout_marginStart="10dp"/>
+                    android:layout_marginStart="@dimen/space125"/>
 
             </LinearLayout>
 
@@ -103,7 +98,7 @@
                     android:layout_weight="1"
                     android:text="@string/store_hours"
                     android:textAppearance="?attr/textAppearanceBodyMedium"
-                    android:layout_marginStart="10dp"/>
+                    android:layout_marginStart="@dimen/space125"/>
 
             </LinearLayout>
 
@@ -112,7 +107,7 @@
                 android:id="@+id/btn_visit_store"
                 android:layout_width="match_parent"
                 android:layout_height="44dp"
-                android:layout_marginTop="18dp"
+                android:layout_marginTop="@dimen/space200"
                 android:text="@string/btn_visit_store"
                 android:textAppearance="?attr/textAppearanceLabelMedium"/>
 

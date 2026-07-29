@@ -62,9 +62,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingHorizontal="24dp"
-                android:paddingTop="24dp"
-                android:paddingBottom="32dp">
+                android:paddingHorizontal="@dimen/space250"
+                android:paddingTop="@dimen/space300"
+                android:paddingBottom="@dimen/space400">
 
                 <!-- Genre + Rating row -->
                 <LinearLayout
@@ -82,8 +82,8 @@
                         android:textAppearance="?attr/textAppearanceLabelSmall"
                         android:textAllCaps="true"
                         android:textColor="@color/white"
-                        android:paddingHorizontal="10dp"
-                        android:paddingVertical="4dp"/>
+                        android:paddingHorizontal="@dimen/space125"
+                        android:paddingVertical="@dimen/space050"/>
 
                     <View
                         android:layout_width="0dp"
@@ -101,7 +101,7 @@
                         android:layout_height="wrap_content"
                         android:text="4.8"
                         android:textAppearance="?attr/textAppearanceLabelLarge"
-                        android:layout_marginStart="4dp"/>
+                        android:layout_marginStart="@dimen/space050"/>
                 </LinearLayout>
 
                 <!-- Title -->
@@ -111,7 +111,7 @@
                     android:layout_height="wrap_content"
                     android:text="Book Title"
                     android:textAppearance="?attr/textAppearanceHeadlineMedium"
-                    android:layout_marginTop="14dp"
+                    android:layout_marginTop="@dimen/space175"
                     android:lineSpacingMultiplier="1.1"/>
 
                 <!-- Author -->
@@ -121,13 +121,13 @@
                     android:layout_height="wrap_content"
                     android:text="Author Name"
                     android:textAppearance="?attr/textAppearanceBodyLarge"
-                    android:layout_marginTop="4dp"/>
+                    android:layout_marginTop="@dimen/space050"/>
 
                 <!-- Divider -->
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginVertical="24dp"/>
+                    android:layout_marginVertical="@dimen/space300"/>
 
 
                 <TextView
@@ -135,7 +135,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/order_book"
                     android:textAppearance="?attr/textAppearanceHeadlineSmall"
-                    android:layout_marginBottom="18dp"/>
+                    android:layout_marginBottom="@dimen/space200"/>
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
@@ -157,7 +157,7 @@
                     android:id="@+id/til_phone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="@dimen/space200"
                     android:hint="@string/phone_number"
                     app:startIconDrawable="@drawable/ic_phone">
 
@@ -173,7 +173,7 @@
                     android:id="@+id/btn_buy"
                     android:layout_width="match_parent"
                     android:layout_height="52dp"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="@dimen/space300"
                     android:text="@string/btn_buy"/>
 
             </LinearLayout>

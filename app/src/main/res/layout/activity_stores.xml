@@ -14,7 +14,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:paddingHorizontal="20dp">
+            android:paddingHorizontal="@dimen/space250">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -43,8 +43,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:paddingHorizontal="20dp"
-            android:paddingVertical="12dp">
+            android:paddingHorizontal="@dimen/space250"
+            android:paddingVertical="@dimen/space150">
 
             <ImageView
                 android:layout_width="16dp"
@@ -57,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/locations_count"
                 android:textAppearance="?attr/textAppearanceLabelMedium"
-                android:layout_marginStart="8dp"/>
+                android:layout_marginStart="@dimen/space100"/>
 
         </LinearLayout>
 
@@ -71,8 +71,8 @@
         android:id="@+id/rv_stores"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingHorizontal="20dp"
-        android:paddingTop="16dp"
+        android:paddingHorizontal="@dimen/space250"
+        android:paddingTop="@dimen/space200"
         android:paddingBottom="110dp"
         android:clipToPadding="false"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
@@ -83,9 +83,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="@dimen/space200"
+        android:layout_marginEnd="@dimen/space200"
+        android:layout_marginBottom="@dimen/space200"
         app:cardCornerRadius="28dp"
         app:cardElevation="8dp">
 

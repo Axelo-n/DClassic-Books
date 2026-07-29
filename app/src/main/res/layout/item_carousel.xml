@@ -29,27 +29,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
-        <!-- Store label chip -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="D'CLASSICS"
-            android:textAppearance="?attr/textAppearanceLabelSmall"
-            android:paddingHorizontal="8dp"
-            android:paddingVertical="4dp"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="14dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
         <TextView
             android:id="@+id/tv_store_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Store Name"
             android:textAppearance="?attr/textAppearanceTitleMedium"
-            android:paddingHorizontal="14dp"
-            android:layout_marginBottom="4dp"
+            android:paddingHorizontal="@dimen/space250"
+            android:layout_marginBottom="@dimen/space050"
             app:layout_constraintBottom_toTopOf="@id/tv_store_address"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
@@ -60,8 +47,8 @@
             android:layout_height="wrap_content"
             android:text="Address"
             android:textAppearance="?attr/textAppearanceBodySmall"
-            android:paddingHorizontal="14dp"
-            android:paddingBottom="14dp"
+            android:paddingHorizontal="@dimen/space250"
+            android:paddingBottom="@dimen/space175"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
