@@ -18,15 +18,15 @@
         <androidx.cardview.widget.CardView
             android:layout_width="72dp"
             android:layout_height="108dp"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="2dp">
+            app:cardCornerRadius="10dp">
 
             <ImageView
                 android:id="@+id/iv_cover"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:contentDescription="Book cover"/>
+                android:contentDescription="Book cover"
+                android:elevation="0dp"/>
 
         </androidx.cardview.widget.CardView>
 
@@ -47,6 +47,7 @@
                 android:background="@drawable/bg_badge_genre"
                 android:textAppearance="?attr/textAppearanceLabelSmall"
                 android:textAllCaps="true"
+                android:textColor="@color/white"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="3dp"/>
 

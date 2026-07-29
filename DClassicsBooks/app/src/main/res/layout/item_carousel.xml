@@ -42,6 +42,7 @@
             android:background="@drawable/bg_badge_genre"
             android:textAppearance="?attr/textAppearanceLabelSmall"
             android:textAllCaps="true"
+            android:textColor="@color/white"
             android:paddingHorizontal="10dp"
             android:paddingVertical="4dp"
             android:layout_marginStart="16dp"

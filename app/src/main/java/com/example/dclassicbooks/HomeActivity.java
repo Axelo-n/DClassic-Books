@@ -94,11 +94,14 @@ public class HomeActivity extends AppCompatActivity {
         llDots = findViewById(R.id.ll_dots);
         vpCarousel.setAdapter(new CarouselAdapter(carouselItems));
 
+        int midPosition = (Integer.MAX_VALUE / 2) - ((Integer.MAX_VALUE / 2) % carouselItems.size());
+        vpCarousel.setCurrentItem(midPosition, false);
+
         setupDots(carouselItems.size());
         vpCarousel.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
             public void onPageSelected(int position) {
-                updateDots(position);
+                updateDots(position % carouselItems.size());
             }
         });
 
@@ -108,7 +111,7 @@ public class HomeActivity extends AppCompatActivity {
         });
         findViewById(R.id.btn_next).setOnClickListener(v -> {
             int cur = vpCarousel.getCurrentItem();
-            if (cur < carouselItems.size() - 1) vpCarousel.setCurrentItem(cur + 1);
+            if (cur < Integer.MAX_VALUE - 1) vpCarousel.setCurrentItem(cur + 1);
         });
 
         // Bottom Navigation

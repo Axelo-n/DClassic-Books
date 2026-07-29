@@ -43,14 +43,18 @@ public class CarouselAdapter extends RecyclerView.Adapter<CarouselAdapter.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        CarouselItem item = items.get(position);
+        if (items.isEmpty()) return;
+        int actualPosition = position % items.size();
+        CarouselItem item = items.get(actualPosition);
         holder.ivStoreBg.setImageResource(item.imageResId);
         holder.tvStoreName.setText(item.name);
         holder.tvStoreAddress.setText(item.address);
     }
 
     @Override
-    public int getItemCount() { return items.size(); }
+    public int getItemCount() {
+        return items.isEmpty() ? 0 : Integer.MAX_VALUE;
+    }
 
     static class ViewHolder extends RecyclerView.ViewHolder {
         ImageView ivStoreBg;

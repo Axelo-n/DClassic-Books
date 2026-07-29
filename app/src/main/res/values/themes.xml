@@ -10,6 +10,10 @@
         <item name="colorOnSecondary">@color/white</item>
         <item name="colorSecondaryContainer">@color/secondary_container</item>
         <item name="colorOnSecondaryContainer">@color/white</item>
+        <item name="colorTertiary">@color/accent</item>
+        <item name="colorOnTertiary">@color/white</item>
+        <item name="colorTertiaryContainer">@color/accent_container</item>
+        <item name="colorOnTertiaryContainer">@color/white</item>
         <item name="colorError">@color/error</item>
         <item name="colorOnError">@color/white</item>
         <item name="colorErrorContainer">@color/error_container</item>

@@ -25,39 +25,15 @@
             android:paddingTop="18dp"
             android:paddingBottom="20dp">
 
-            <!-- Name + OPEN row -->
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tv_store_name"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
-
-                <TextView
-                    android:id="@+id/tv_store_name"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Store Name"
-                    android:textSize="17sp"
-                    android:fontFamily="@font/aleo_semibold"
-                    android:layout_marginEnd="8dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="● OPEN"
-                    android:textSize="11sp"
-                    android:textStyle="bold"
-                    android:paddingHorizontal="10dp"
-                    android:paddingVertical="5dp"/>
-
-            </LinearLayout>
-
-            <!-- Divider -->
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginVertical="14dp"/>
+                android:layout_weight="1"
+                android:text="Store Name"
+                android:textSize="17sp"
+                android:fontFamily="@font/aleo_semibold"
+                android:layout_marginBottom="16dp"/>
 
             <!-- Address row -->
             <LinearLayout
