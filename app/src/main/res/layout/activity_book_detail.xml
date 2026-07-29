@@ -100,8 +100,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="4.8"
-                        android:textSize="13sp"
-                        android:textStyle="bold"
+                        android:textAppearance="?attr/textAppearanceLabelLarge"
                         android:layout_marginStart="4dp"/>
                 </LinearLayout>
 
@@ -111,8 +110,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Book Title"
-                    android:textSize="27sp"
-                    android:fontFamily="@font/aleo_semibold"
+                    android:textAppearance="?attr/textAppearanceHeadlineMedium"
                     android:layout_marginTop="14dp"
                     android:lineSpacingMultiplier="1.1"/>
 
@@ -122,7 +120,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Author Name"
-                    android:textSize="15sp"
+                    android:textAppearance="?attr/textAppearanceBodyLarge"
                     android:layout_marginTop="4dp"/>
 
                 <!-- Divider -->
@@ -136,8 +134,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/order_book"
-                    android:textSize="17sp"
-                    android:textStyle="bold"
+                    android:textAppearance="?attr/textAppearanceHeadlineSmall"
                     android:layout_marginBottom="18dp"/>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -177,9 +174,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="52dp"
                     android:layout_marginTop="24dp"
-                    android:text="@string/btn_buy"
-                    android:textStyle="bold"
-                    android:textSize="15sp"/>
+                    android:text="@string/btn_buy"/>
 
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>

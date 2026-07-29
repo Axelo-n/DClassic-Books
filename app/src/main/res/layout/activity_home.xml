@@ -31,10 +31,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:fontFamily="@font/aleo_semibold"
-                android:letterSpacing="0.03"
                 android:text="@string/app_name"
-                android:textSize="19sp"
+                android:textAppearance="?attr/textAppearanceTitleLarge"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@id/iv_logo_bar"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -105,8 +103,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/greeting_morning"
-                            android:textSize="13sp"
-                            android:letterSpacing="0.06"
+                            android:textAppearance="?attr/textAppearanceLabelMedium"
                             android:textColor="@color/white"/>
 
                         <TextView
@@ -114,8 +111,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Reader"
-                            android:textSize="24sp"
-                            android:fontFamily="@font/aleo_semibold"
+                            android:textAppearance="?attr/textAppearanceHeadlineSmall"
                             android:layout_marginTop="2dp"
                             android:textColor="@color/white"/>
 
@@ -129,7 +125,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/greeting_subtitle"
-                            android:textSize="13sp"
+                            android:textAppearance="?attr/textAppearanceBodyMedium"
                             android:textColor="@color/white"/>
 
                     </LinearLayout>
@@ -146,17 +142,11 @@
                 android:paddingTop="28dp"
                 android:paddingBottom="14dp">
 
-                <View
-                    android:layout_width="4dp"
-                    android:layout_height="20dp"
-                    android:layout_marginEnd="10dp"/>
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/aleo_semibold"
                     android:text="@string/featured_books"
-                    android:textSize="19sp" />
+                    android:textAppearance="?attr/textAppearanceHeadlineSmall" />
 
             </LinearLayout>
 
@@ -180,17 +170,11 @@
                 android:paddingTop="28dp"
                 android:paddingBottom="14dp">
 
-                <View
-                    android:layout_width="4dp"
-                    android:layout_height="20dp"
-                    android:layout_marginEnd="10dp"/>
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/our_stores"
-                    android:textSize="19sp"
-                    android:fontFamily="@font/aleo_semibold"/>
+                    android:textAppearance="?attr/textAppearanceHeadlineSmall"/>
 
             </LinearLayout>
 

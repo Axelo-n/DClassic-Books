@@ -4,19 +4,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!-- Book Cover (top ~67%) -->
+    <!-- Book Cover -->
     <ImageView
         android:id="@+id/iv_cover"
         android:layout_width="match_parent"
-        android:layout_height="154dp"
+        android:layout_height="120dp"
         android:scaleType="centerCrop"
         android:contentDescription="Book cover"/>
 
-    <!-- Info section (bottom 33%) -->
+    <!-- Info section -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingHorizontal="10dp"
         android:paddingTop="10dp"
@@ -37,12 +36,11 @@
         <TextView
             android:id="@+id/tv_title"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:text="Book Title"
-            android:textSize="13sp"
-            android:fontFamily="@font/aleo_semibold"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
             android:maxLines="2"
+            android:lineHeight="20sp"
             android:ellipsize="end"
             android:layout_marginTop="5dp"/>
 
@@ -51,7 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Author"
-            android:textSize="10sp"
+            android:textAppearance="?attr/textAppearanceLabelMedium"
             android:maxLines="1"
             android:ellipsize="end"/>
 
