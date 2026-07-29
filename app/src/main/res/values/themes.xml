@@ -26,7 +26,6 @@
         <item name="colorOnSurfaceVariant">@color/on_surface_variant</item>
         <item name="android:colorBackground">@color/surface</item>
 
-        <item name="android:fontFamily">@font/inter</item>
         <item name="textAppearanceDisplayLarge">@style/Typography.DisplayLarge</item>
         <item name="textAppearanceDisplayMedium">@style/Typography.DisplayMedium</item>
         <item name="textAppearanceDisplaySmall">@style/Typography.DisplaySmall</item>
