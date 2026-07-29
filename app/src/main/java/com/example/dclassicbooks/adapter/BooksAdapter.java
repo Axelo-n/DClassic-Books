@@ -32,7 +32,7 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.ViewHolder> 
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_book, parent, false);
+                .inflate(R.layout.item_book_grid, parent, false);
         return new ViewHolder(view);
     }
 
@@ -43,7 +43,6 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.ViewHolder> 
         holder.tvTitle.setText(book.getTitle());
         holder.tvAuthor.setText(book.getAuthor());
         holder.tvGenre.setText(book.getGenre());
-        holder.tvRating.setText(String.valueOf(book.getRating()));
         holder.itemView.setOnClickListener(v -> listener.onBookClick(book));
     }
 
@@ -52,7 +51,7 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.ViewHolder> 
 
     static class ViewHolder extends RecyclerView.ViewHolder {
         ImageView ivCover;
-        TextView tvTitle, tvAuthor, tvGenre, tvRating;
+        TextView tvTitle, tvAuthor, tvGenre;
 
         ViewHolder(View itemView) {
             super(itemView);
@@ -60,7 +59,6 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.ViewHolder> 
             tvTitle = itemView.findViewById(R.id.tv_title);
             tvAuthor = itemView.findViewById(R.id.tv_author);
             tvGenre = itemView.findViewById(R.id.tv_genre);
-            tvRating = itemView.findViewById(R.id.tv_rating);
         }
     }
 }
