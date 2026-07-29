@@ -3,15 +3,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/bg_primary">
+    android:layout_height="match_parent">
 
     <!-- === APP BAR === -->
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar_stores"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/bg_primary"
         app:elevation="0dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -24,9 +22,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/label_stores"
-                android:textColor="@color/text_primary"
                 android:textSize="22sp"
-                android:fontFamily="serif"
+                android:fontFamily="@font/aleo_semibold"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -50,8 +47,7 @@
         <!-- Gold accent line -->
         <View
             android:layout_width="match_parent"
-            android:layout_height="1.5dp"
-            android:background="@color/divider"/>
+            android:layout_height="1.5dp"/>
 
         <!-- Stores count banner -->
         <LinearLayout
@@ -60,13 +56,11 @@
             android:orientation="horizontal"
             android:paddingHorizontal="@dimen/screen_padding"
             android:paddingVertical="12dp"
-            android:gravity="center_vertical"
-            android:background="@color/bg_secondary">
+            android:gravity="center_vertical">
 
             <View
                 android:layout_width="3dp"
                 android:layout_height="18dp"
-                android:background="@color/gold_primary"
                 android:layout_marginEnd="10dp"/>
 
             <TextView
@@ -74,7 +68,6 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="4 locations near you"
-                android:textColor="@color/text_secondary"
                 android:textSize="13sp"/>
 
             <ImageView
@@ -104,11 +97,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:background="@color/bg_secondary"
         app:menu="@menu/bottom_navigation"
-        app:itemIconTint="@color/selector_bottom_nav"
-        app:itemTextColor="@color/selector_bottom_nav"
-        app:itemActiveIndicatorColor="@color/gold_subtle"
         app:elevation="16dp"
         app:selectedItemId="@id/nav_store"/>
 

@@ -3,8 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/bg_primary">
+    android:layout_height="match_parent">
 
     <!-- === COLLAPSING TOOLBAR === -->
     <com.google.android.material.appbar.AppBarLayout
@@ -20,7 +19,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:contentScrim="@color/bg_primary"
             app:titleEnabled="false"
             android:fitsSystemWindows="true">
 
@@ -48,9 +46,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
-                app:navigationIcon="@drawable/ic_arrow_back"
-                app:navigationIconTint="@color/text_primary"
-                android:background="@color/transparent"/>
+                app:navigationIcon="@drawable/ic_arrow_back"/>
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
@@ -81,7 +77,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="NON-FICTION"
-                    android:textColor="@color/gold_primary"
                     android:textSize="10sp"
                     android:fontFamily="sans-serif-medium"
                     android:letterSpacing="0.1"
@@ -95,9 +90,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Meditations"
-                    android:textColor="@color/text_primary"
                     android:textSize="28sp"
-                    android:fontFamily="serif"
+                    android:fontFamily="@font/aleo_semibold"
                     android:textStyle="bold"
                     android:lineSpacingMultiplier="1.2"
                     android:layout_marginTop="12dp"/>
@@ -108,9 +102,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="by Marcus Aurelius"
-                    android:textColor="@color/gold_primary"
                     android:textSize="14sp"
-                    android:fontFamily="serif"
+                    android:fontFamily="@font/aleo_semibold"
                     android:textStyle="italic"
                     android:layout_marginTop="6dp"/>
 
@@ -152,7 +145,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="4.9"
-                        android:textColor="@color/text_secondary"
                         android:textSize="12sp"
                         android:layout_marginStart="6dp"/>
                 </LinearLayout>
@@ -161,7 +153,6 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/divider"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"/>
 
@@ -185,16 +176,14 @@
                     <View
                         android:layout_width="3dp"
                         android:layout_height="20dp"
-                        android:background="@color/gold_primary"
                         android:layout_marginEnd="10dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/label_order_info"
-                        android:textColor="@color/text_primary"
                         android:textSize="18sp"
-                        android:fontFamily="serif"
+                        android:fontFamily="@font/aleo_semibold"
                         android:textStyle="bold"/>
 
                 </LinearLayout>
@@ -207,7 +196,6 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/hint_address"
                     app:startIconDrawable="@drawable/ic_location_on"
-                    app:startIconTint="@color/text_hint"
                     android:layout_marginBottom="16dp">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -217,8 +205,6 @@
                         android:inputType="textPostalAddress|textMultiLine"
                         android:minLines="2"
                         android:imeOptions="actionNext"
-                        android:textColor="@color/text_primary"
-                        android:textColorHint="@color/text_hint"
                         android:textSize="14sp"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -230,7 +216,6 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/hint_phone"
                     app:startIconDrawable="@drawable/ic_phone"
-                    app:startIconTint="@color/text_hint"
                     android:layout_marginBottom="32dp">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -239,8 +224,6 @@
                         android:layout_height="wrap_content"
                         android:inputType="phone"
                         android:imeOptions="actionDone"
-                        android:textColor="@color/text_primary"
-                        android:textColorHint="@color/text_hint"
                         android:textSize="14sp"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -250,7 +233,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/button_height"
                     android:text="@string/label_buy_book"
-                    android:textColor="@color/text_on_gold"
                     android:textSize="15sp"
                     android:letterSpacing="0.1"
                     android:fontFamily="sans-serif-medium"

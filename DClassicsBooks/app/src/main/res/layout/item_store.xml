@@ -7,7 +7,6 @@
     android:layout_marginBottom="14dp"
     app:cardCornerRadius="@dimen/corner_lg"
     app:cardElevation="0dp"
-    app:cardBackgroundColor="@color/transparent"
     android:foreground="?attr/selectableItemBackground">
 
     <LinearLayout
@@ -56,9 +55,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="D'Classics Books — Central Jakarta"
-                    android:textColor="@color/text_primary"
                     android:textSize="15sp"
-                    android:fontFamily="serif"
+                    android:fontFamily="@font/aleo_semibold"
                     android:textStyle="bold"
                     android:maxLines="2"
                     android:ellipsize="end"
@@ -71,7 +69,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="OPEN"
-                android:textColor="@color/success"
                 android:textSize="9sp"
                 android:fontFamily="sans-serif-medium"
                 android:letterSpacing="0.08"
@@ -85,7 +82,6 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:background="@color/divider"
             android:layout_marginBottom="14dp"/>
 
         <!-- Address row -->
@@ -110,7 +106,6 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Jl. MH Thamrin No. 45, Menteng, Central Jakarta"
-                android:textColor="@color/text_secondary"
                 android:textSize="13sp"
                 android:lineSpacingMultiplier="1.3"/>
 
@@ -137,7 +132,6 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="+62 21 3920 0011"
-                android:textColor="@color/text_secondary"
                 android:textSize="13sp"/>
 
         </LinearLayout>
@@ -162,7 +156,6 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/label_open_hours"
-                android:textColor="@color/text_secondary"
                 android:textSize="13sp"/>
 
         </LinearLayout>
@@ -173,7 +166,6 @@
             android:layout_width="match_parent"
             android:layout_height="44dp"
             android:text="@string/label_visit_store"
-            android:textColor="@color/gold_primary"
             android:textSize="12sp"
             android:letterSpacing="0.08"
             android:fontFamily="sans-serif-medium"

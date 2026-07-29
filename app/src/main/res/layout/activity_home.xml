@@ -3,14 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_primary"
     android:fitsSystemWindows="true">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/surface"
         android:fitsSystemWindows="true"
         app:elevation="0dp">
 
@@ -32,15 +30,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/app_name"
-                android:textColor="@color/gold_dark"
-                android:textSize="19sp"
-                android:fontFamily="serif"
-                android:letterSpacing="0.03"
                 android:layout_marginStart="10dp"
+                android:fontFamily="@font/aleo_semibold"
+                android:letterSpacing="0.03"
+                android:text="@string/app_name"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@id/iv_logo_bar"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageButton
                 android:id="@+id/btn_overflow"
@@ -57,8 +54,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/divider"/>
+            android:layout_height="1dp"/>
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -75,19 +71,18 @@
             android:orientation="vertical">
 
             <!-- Greeting Card -->
-            <androidx.cardview.widget.CardView
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="20dp"
-                app:cardBackgroundColor="@color/transparent"
                 app:cardCornerRadius="20dp"
-                app:cardElevation="0dp">
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/accent_container">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/bg_greeting_card"
                     android:padding="20dp">
 
                     <ImageView
@@ -95,10 +90,10 @@
                         android:layout_height="56dp"
                         android:src="@drawable/ic_menu_book"
                         android:alpha="0.15"
-                        android:tint="@color/white"
+                        app:tint="@color/white"
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentTop="true"
-                        android:contentDescription="@null"/>
+                        android:contentDescription="@null" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -110,24 +105,23 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/greeting_morning"
-                            android:textColor="@color/text_secondary"
                             android:textSize="13sp"
-                            android:letterSpacing="0.06"/>
+                            android:letterSpacing="0.06"
+                            android:textColor="@color/white"/>
 
                         <TextView
                             android:id="@+id/tv_username"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Reader"
-                            android:textColor="@color/gold_dark"
                             android:textSize="24sp"
-                            android:fontFamily="serif"
-                            android:layout_marginTop="2dp"/>
+                            android:fontFamily="@font/aleo_semibold"
+                            android:layout_marginTop="2dp"
+                            android:textColor="@color/white"/>
 
                         <View
                             android:layout_width="32dp"
                             android:layout_height="2dp"
-                            android:background="@color/gold_primary"
                             android:layout_marginTop="10dp"
                             android:layout_marginBottom="10dp"/>
 
@@ -135,12 +129,12 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/greeting_subtitle"
-                            android:textColor="@color/text_secondary"
-                            android:textSize="13sp"/>
+                            android:textSize="13sp"
+                            android:textColor="@color/white"/>
 
                     </LinearLayout>
                 </RelativeLayout>
-            </androidx.cardview.widget.CardView>
+            </com.google.android.material.card.MaterialCardView>
 
             <!-- Featured Books -->
             <LinearLayout
@@ -155,16 +149,14 @@
                 <View
                     android:layout_width="4dp"
                     android:layout_height="20dp"
-                    android:background="@color/gold_primary"
                     android:layout_marginEnd="10dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/aleo_semibold"
                     android:text="@string/featured_books"
-                    android:textColor="@color/text_primary"
-                    android:textSize="19sp"
-                    android:fontFamily="serif"/>
+                    android:textSize="19sp" />
 
             </LinearLayout>
 
@@ -191,16 +183,14 @@
                 <View
                     android:layout_width="4dp"
                     android:layout_height="20dp"
-                    android:background="@color/gold_primary"
                     android:layout_marginEnd="10dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/our_stores"
-                    android:textColor="@color/text_primary"
                     android:textSize="19sp"
-                    android:fontFamily="serif"/>
+                    android:fontFamily="@font/aleo_semibold"/>
 
             </LinearLayout>
 
@@ -224,7 +214,6 @@
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:src="@drawable/ic_chevron_left"
-                    android:background="@drawable/bg_carousel_btn"
                     android:contentDescription="Previous"
                     android:layout_marginStart="8dp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -236,7 +225,6 @@
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:src="@drawable/ic_chevron_right"
-                    android:background="@drawable/bg_carousel_btn"
                     android:contentDescription="Next"
                     android:layout_marginEnd="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -267,18 +255,13 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         app:cardCornerRadius="28dp"
-        app:cardElevation="8dp"
-        app:cardBackgroundColor="@color/surface"
-        app:strokeWidth="1dp"
-        app:strokeColor="@color/gold_outline">
+        app:cardElevation="8dp">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_nav"
-            style="@style/Widget.DClassicsBooks.BottomNavigationView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:menu="@menu/bottom_navigation"
-            app:labelVisibilityMode="labeled"/>
+            app:menu="@menu/bottom_navigation"/>
 
     </com.google.android.material.card.MaterialCardView>
 

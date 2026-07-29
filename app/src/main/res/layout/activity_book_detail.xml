@@ -3,14 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_primary"
     android:fitsSystemWindows="true">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:background="@color/bg_primary"
         android:fitsSystemWindows="true"
         app:elevation="0dp">
 
@@ -19,8 +17,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:contentScrim="@color/surface"
-            app:statusBarScrim="@color/surface"
             app:expandedTitleTextAppearance="@android:style/TextAppearance.Small"
             app:collapsedTitleTextAppearance="@android:style/TextAppearance.Small">
 
@@ -36,7 +32,6 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/bg_carousel_gradient"
                 app:layout_collapseMode="pin"/>
 
             <androidx.appcompat.widget.Toolbar
@@ -44,8 +39,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
-                app:navigationIcon="@drawable/ic_arrow_back"
-                app:navigationIconTint="@color/white"/>
+                app:navigationIcon="@drawable/ic_arrow_back"/>
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
@@ -60,7 +54,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="-20dp"
-            app:cardBackgroundColor="@color/surface"
             app:cardCornerRadius="24dp"
             app:cardElevation="0dp">
 
@@ -84,13 +77,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Philosophy"
-                        android:textColor="@color/gold_dark"
                         android:textSize="11sp"
                         android:textAllCaps="true"
                         android:letterSpacing="0.1"
                         android:paddingHorizontal="10dp"
-                        android:paddingVertical="4dp"
-                        android:background="@drawable/bg_badge_genre"/>
+                        android:paddingVertical="4dp"/>
 
                     <View
                         android:layout_width="0dp"
@@ -107,7 +98,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="4.8"
-                        android:textColor="@color/text_secondary"
                         android:textSize="13sp"
                         android:textStyle="bold"
                         android:layout_marginStart="4dp"/>
@@ -119,9 +109,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Book Title"
-                    android:textColor="@color/gold_dark"
                     android:textSize="27sp"
-                    android:fontFamily="serif"
+                    android:fontFamily="@font/aleo_semibold"
                     android:layout_marginTop="14dp"
                     android:lineSpacingMultiplier="1.1"/>
 
@@ -131,7 +120,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Author Name"
-                    android:textColor="@color/text_secondary"
                     android:textSize="15sp"
                     android:layout_marginTop="4dp"/>
 
@@ -139,7 +127,6 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/divider"
                     android:layout_marginVertical="24dp"/>
 
                 <!-- Order Section Header -->
@@ -153,14 +140,12 @@
                     <View
                         android:layout_width="4dp"
                         android:layout_height="20dp"
-                        android:background="@color/gold_primary"
                         android:layout_marginEnd="10dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/order_book"
-                        android:textColor="@color/text_primary"
                         android:textSize="17sp"
                         android:textStyle="bold"/>
 
@@ -168,37 +153,31 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/til_address"
-                    style="@style/Widget.DClassicsBooks.TextInputLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/delivery_address"
-                    app:startIconDrawable="@drawable/ic_location_on"
-                    app:startIconTint="@color/text_hint">
+                    app:startIconDrawable="@drawable/ic_location_on">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/et_address"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/text_primary"
                         android:inputType="textPostalAddress|textMultiLine"
                         android:minLines="2"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/til_phone"
-                    style="@style/Widget.DClassicsBooks.TextInputLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:hint="@string/phone_number"
-                    app:startIconDrawable="@drawable/ic_phone"
-                    app:startIconTint="@color/text_hint">
+                    app:startIconDrawable="@drawable/ic_phone">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/et_phone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/text_primary"
                         android:inputType="phone"
                         android:imeOptions="actionDone"/>
                 </com.google.android.material.textfield.TextInputLayout>
@@ -209,8 +188,6 @@
                     android:layout_height="52dp"
                     android:layout_marginTop="24dp"
                     android:text="@string/btn_buy"
-                    android:background="@drawable/bg_button_primary"
-                    android:textColor="@color/text_on_gold"
                     android:textStyle="bold"
                     android:textSize="15sp"/>
 

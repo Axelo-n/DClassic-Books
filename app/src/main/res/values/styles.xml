@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Typography.Heading" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/aleo_semibold</item>
+        <item name="android:fontFamily">@font/aleo_semibold</item>
+    </style>
+    <style name="Typography.DisplayLarge" parent="TextAppearance.Material3.DisplayLarge">
+        <item name="fontFamily">@font/aleo_semibold</item>
+        <item name="android:fontFamily">@font/aleo_semibold</item>
+    </style>
+    <style name="Typography.DisplayMedium" parent="TextAppearance.Material3.DisplayMedium">
+        <item name="fontFamily">@font/aleo_semibold</item>
+        <item name="android:fontFamily">@font/aleo_semibold</item>
+    </style>
+    <style name="Typography.DisplaySmall" parent="TextAppearance.Material3.DisplaySmall">
+        <item name="fontFamily">@font/aleo_semibold</item>
+        <item name="android:fontFamily">@font/aleo_semibold</item>
+    </style>
+    <style name="Typography.HeadlineLarge" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="fontFamily">@font/aleo_semibold</item>
+        <item name="android:fontFamily">@font/aleo_semibold</item>
+    </style>
+    <style name="Typography.HeadlineMedium" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="fontFamily">@font/aleo_semibold</item>
+        <item name="android:fontFamily">@font/aleo_semibold</item>
+    </style>
+    <style name="Typography.HeadlineSmall" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="fontFamily">@font/aleo_semibold</item>
+        <item name="android:fontFamily">@font/aleo_semibold</item>
+    </style>
+    <style name="Typography.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/aleo_semibold</item>
+        <item name="android:fontFamily">@font/aleo_semibold</item>
+    </style>
+    <style name="Typography.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">@font/aleo_semibold</item>
+        <item name="android:fontFamily">@font/aleo_semibold</item>
+    </style>
+    <style name="Typography.TitleSmall" parent="TextAppearance.Material3.TitleSmall">
+        <item name="fontFamily">@font/aleo_semibold</item>
+        <item name="android:fontFamily">@font/aleo_semibold</item>
+    </style>
+    <style name="Typography.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:fontFamily">@font/inter</item>
+    </style>
+    <style name="Typography.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:fontFamily">@font/inter</item>
+    </style>
+    <style name="Typography.BodySmall" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:fontFamily">@font/inter</item>
+    </style>
+    <style name="Typography.LabelLarge" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:fontFamily">@font/inter</item>
+    </style>
+    <style name="Typography.LabelMedium" parent="TextAppearance.Material3.LabelMedium">
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:fontFamily">@font/inter</item>
+    </style>
+    <style name="Typography.LabelSmall" parent="TextAppearance.Material3.LabelSmall">
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:fontFamily">@font/inter</item>
+    </style>
+
+    <style name="Widget.DClassicsBooks.CardView" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">?attr/colorSurfaceContainerLow</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+</resources>

@@ -1,30 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Backgrounds — deep antique brown -->
-    <color name="bg_primary">#211909</color>
-    <color name="bg_secondary">#2C2210</color>
-    <color name="surface">#322715</color>
-    <color name="surface_light">#3E3119</color>
-    <color name="card">#322715</color>
-    <color name="gold_pale">#26D2B36A</color>
-
-    <!-- Gold Accent -->
-    <color name="gold_primary">#D2B36A</color>
-    <color name="gold_dark">#E7CF96</color>
-    <color name="gold_light">#B8995A</color>
-    <color name="gold_deep">#D8BE85</color>
-    <color name="gold_outline">#38D2B36A</color>
-
-    <!-- Text — cream on dark -->
-    <color name="text_primary">#F3EAD3</color>
-    <color name="text_secondary">#C2AF88</color>
-    <color name="text_hint">#8A784F</color>
-    <color name="text_on_gold">#2E2410</color>
-
-    <!-- UI -->
-    <color name="divider">#453A20</color>
-    <color name="error">#F2A099</color>
     <color name="white">#FFFFFF</color>
+    <color name="primary">#4E3000</color>
+    <color name="primary_container">#926421</color>
+    <color name="secondary">#45331C</color>
+    <color name="secondary_container">#80694E</color>
+    <color name="accent">#00385F</color>
+    <color name="accent_container">#43709D</color>
+    <color name="error">#740006</color>
+    <color name="error_container">#CF2C27</color>
+    <color name="surface">#FFF8F4</color>
+    <color name="on_surface">#161009</color>
+    <color name="on_surface_variant">#3E3429</color>
+    <color name="outline">#5C5144</color>
+    <color name="outline_variant">#776B5E</color>
+    <color name="surface_container_low">#FFF1E5</color>
+    <color name="surface_container">#F3E6DA</color>
+    <color name="surface_container_high">#DCCFC4</color>
+
     <color name="black">#000000</color>
     <color name="transparent">#00000000</color>
 

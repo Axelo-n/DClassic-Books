@@ -3,13 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_primary"
     android:fitsSystemWindows="true">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/surface"
         android:fitsSystemWindows="true"
         app:elevation="0dp">
 
@@ -22,9 +20,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/books_title"
-                android:textColor="@color/gold_dark"
                 android:textSize="21sp"
-                android:fontFamily="serif"
+                android:fontFamily="@font/aleo_semibold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"/>
@@ -44,16 +41,10 @@
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
-            style="@style/Widget.DClassicsBooks.TabLayout"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             app:tabMode="fixed"
-            app:tabGravity="fill"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/divider"/>
+            app:tabGravity="fill" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -72,18 +63,13 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         app:cardCornerRadius="28dp"
-        app:cardElevation="8dp"
-        app:cardBackgroundColor="@color/surface"
-        app:strokeWidth="1dp"
-        app:strokeColor="@color/gold_outline">
+        app:cardElevation="8dp">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_nav"
-            style="@style/Widget.DClassicsBooks.BottomNavigationView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:menu="@menu/bottom_navigation"
-            app:labelVisibilityMode="labeled"/>
+            app:menu="@menu/bottom_navigation"/>
 
     </com.google.android.material.card.MaterialCardView>
 

@@ -3,13 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_primary"
     android:fitsSystemWindows="true">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/surface"
         android:fitsSystemWindows="true"
         app:elevation="0dp">
 
@@ -22,9 +20,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/stores_title"
-                android:textColor="@color/gold_dark"
                 android:textSize="21sp"
-                android:fontFamily="serif"
+                android:fontFamily="@font/aleo_semibold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"/>
@@ -48,21 +45,18 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:paddingHorizontal="20dp"
-            android:paddingVertical="12dp"
-            android:background="@color/gold_pale">
+            android:paddingVertical="12dp">
 
             <ImageView
                 android:layout_width="16dp"
                 android:layout_height="16dp"
                 android:src="@drawable/ic_location_on"
-                android:tint="@color/gold_dark"
                 android:contentDescription="@null"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/locations_count"
-                android:textColor="@color/gold_deep"
                 android:textSize="13sp"
                 android:fontFamily="sans-serif-medium"
                 android:layout_marginStart="8dp"/>
@@ -71,8 +65,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/divider"/>
+            android:layout_height="1dp"/>
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -96,18 +89,13 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         app:cardCornerRadius="28dp"
-        app:cardElevation="8dp"
-        app:cardBackgroundColor="@color/surface"
-        app:strokeWidth="1dp"
-        app:strokeColor="@color/gold_outline">
+        app:cardElevation="8dp">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_nav"
-            style="@style/Widget.DClassicsBooks.BottomNavigationView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:menu="@menu/bottom_navigation"
-            app:labelVisibilityMode="labeled"/>
+            app:menu="@menu/bottom_navigation"/>
 
     </com.google.android.material.card.MaterialCardView>
 

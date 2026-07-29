@@ -6,7 +6,6 @@
     android:layout_height="@dimen/featured_book_height"
     android:layout_marginEnd="12dp"
     app:cardCornerRadius="@dimen/corner_lg"
-    app:cardBackgroundColor="@color/card"
     app:cardElevation="6dp"
     android:foreground="?attr/selectableItemBackground">
 
@@ -40,7 +39,6 @@
         <View
             android:layout_width="3dp"
             android:layout_height="0dp"
-            android:background="@color/gold_primary"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
@@ -51,7 +49,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="FICTION"
-            android:textColor="@color/gold_light"
             android:textSize="9sp"
             android:fontFamily="sans-serif-medium"
             android:letterSpacing="0.08"
@@ -82,9 +79,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Meditations"
-                android:textColor="@color/text_primary"
                 android:textSize="13sp"
-                android:fontFamily="serif"
+                android:fontFamily="@font/aleo_semibold"
                 android:textStyle="bold"
                 android:maxLines="2"
                 android:ellipsize="end"
@@ -95,9 +91,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Marcus Aurelius"
-                android:textColor="@color/text_secondary"
                 android:textSize="11sp"
-                android:fontFamily="serif"
+                android:fontFamily="@font/aleo_semibold"
                 android:textStyle="italic"
                 android:maxLines="1"
                 android:ellipsize="end"

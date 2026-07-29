@@ -4,11 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="16dp"
-    app:cardBackgroundColor="@color/surface"
     app:cardCornerRadius="20dp"
-    app:cardElevation="0dp"
-    app:strokeWidth="1dp"
-    app:strokeColor="@color/gold_outline">
+    app:cardElevation="0dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,8 +15,7 @@
         <!-- Top accent bar (gold) -->
         <View
             android:layout_width="match_parent"
-            android:layout_height="4dp"
-            android:background="@drawable/bg_button_primary"/>
+            android:layout_height="4dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -42,21 +38,18 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Store Name"
-                    android:textColor="@color/gold_dark"
                     android:textSize="17sp"
-                    android:fontFamily="serif"
+                    android:fontFamily="@font/aleo_semibold"
                     android:layout_marginEnd="8dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="● OPEN"
-                    android:textColor="#8FD694"
                     android:textSize="11sp"
                     android:textStyle="bold"
                     android:paddingHorizontal="10dp"
-                    android:paddingVertical="5dp"
-                    android:background="@drawable/bg_open_badge"/>
+                    android:paddingVertical="5dp"/>
 
             </LinearLayout>
 
@@ -64,7 +57,6 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/divider"
                 android:layout_marginVertical="14dp"/>
 
             <!-- Address row -->
@@ -79,7 +71,6 @@
                     android:layout_width="16dp"
                     android:layout_height="16dp"
                     android:src="@drawable/ic_location_on"
-                    android:tint="@color/gold_primary"
                     android:contentDescription="Location"/>
 
                 <TextView
@@ -88,7 +79,6 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Address"
-                    android:textColor="@color/text_secondary"
                     android:textSize="13sp"
                     android:layout_marginStart="10dp"/>
 
@@ -106,7 +96,6 @@
                     android:layout_width="16dp"
                     android:layout_height="16dp"
                     android:src="@drawable/ic_phone"
-                    android:tint="@color/gold_primary"
                     android:contentDescription="Phone"/>
 
                 <TextView
@@ -115,7 +104,6 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Phone"
-                    android:textColor="@color/text_secondary"
                     android:textSize="13sp"
                     android:layout_marginStart="10dp"/>
 
@@ -132,7 +120,6 @@
                     android:layout_width="16dp"
                     android:layout_height="16dp"
                     android:src="@drawable/ic_access_time"
-                    android:tint="@color/gold_primary"
                     android:contentDescription="Hours"/>
 
                 <TextView
@@ -140,7 +127,6 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/store_hours"
-                    android:textColor="@color/text_secondary"
                     android:textSize="13sp"
                     android:layout_marginStart="10dp"/>
 
@@ -153,8 +139,6 @@
                 android:layout_height="44dp"
                 android:layout_marginTop="18dp"
                 android:text="@string/btn_visit_store"
-                android:background="@drawable/bg_button_outline"
-                android:textColor="@color/gold_dark"
                 android:textStyle="bold"
                 android:textSize="13sp"/>
 

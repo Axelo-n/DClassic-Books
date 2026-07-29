@@ -40,9 +40,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="D'CLASSICS"
-            android:textColor="@color/text_primary"
             android:textSize="30sp"
-            android:fontFamily="serif"
+            android:fontFamily="@font/aleo_semibold"
             android:textStyle="bold"
             android:letterSpacing="0.12"
             app:layout_constraintTop_toBottomOf="@id/iv_logo"
@@ -55,7 +54,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="B  O  O  K  S"
-            android:textColor="@color/gold_primary"
             android:textSize="12sp"
             android:fontFamily="sans-serif-light"
             android:letterSpacing="0.5"
@@ -69,7 +67,6 @@
             android:id="@+id/v_gold_divider"
             android:layout_width="60dp"
             android:layout_height="1.5dp"
-            android:background="@color/gold_primary"
             android:alpha="0.6"
             app:layout_constraintTop_toBottomOf="@id/tv_app_subtitle_label"
             app:layout_constraintStart_toStartOf="parent"
@@ -92,7 +89,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/label_welcome_back"
-                android:textColor="@color/gold_primary"
                 android:textSize="13sp"
                 android:fontFamily="sans-serif-light"
                 android:letterSpacing="0.08"
@@ -102,9 +98,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/label_sign_in"
-                android:textColor="@color/text_primary"
                 android:textSize="32sp"
-                android:fontFamily="serif"
+                android:fontFamily="@font/aleo_semibold"
                 android:textStyle="bold"
                 android:layout_marginTop="4dp"
                 android:layout_marginBottom="32dp"/>
@@ -117,7 +112,6 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/hint_username"
                 app:startIconDrawable="@drawable/ic_person"
-                app:startIconTint="@color/text_hint"
                 android:layout_marginBottom="16dp">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -126,8 +120,6 @@
                     android:layout_height="wrap_content"
                     android:inputType="text"
                     android:imeOptions="actionNext"
-                    android:textColor="@color/text_primary"
-                    android:textColorHint="@color/text_hint"
                     android:textSize="15sp"/>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -139,9 +131,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/hint_password"
                 app:startIconDrawable="@drawable/ic_auto_stories"
-                app:startIconTint="@color/text_hint"
                 app:endIconMode="password_toggle"
-                app:endIconTint="@color/text_secondary"
                 android:layout_marginBottom="32dp">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -150,8 +140,6 @@
                     android:layout_height="wrap_content"
                     android:inputType="textPassword"
                     android:imeOptions="actionDone"
-                    android:textColor="@color/text_primary"
-                    android:textColorHint="@color/text_hint"
                     android:textSize="15sp"/>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -161,7 +149,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/button_height"
                 android:text="@string/btn_sign_in"
-                android:textColor="@color/text_on_gold"
                 android:textSize="15sp"
                 android:letterSpacing="0.1"
                 android:fontFamily="sans-serif-medium"
@@ -173,7 +160,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="© 2025 D'Classics Books · v1.0"
-                android:textColor="@color/text_hint"
                 android:textSize="11sp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="32dp"

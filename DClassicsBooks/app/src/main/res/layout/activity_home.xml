@@ -3,15 +3,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/bg_primary">
+    android:layout_height="match_parent">
 
     <!-- === TOP APP BAR === -->
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/bg_primary"
         app:elevation="0dp"
         app:liftOnScroll="true">
 
@@ -36,9 +34,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="D'Classics"
-                android:textColor="@color/text_primary"
                 android:textSize="20sp"
-                android:fontFamily="serif"
+                android:fontFamily="@font/aleo_semibold"
                 android:textStyle="bold"
                 android:layout_marginStart="8dp"
                 app:layout_constraintStart_toEndOf="@id/iv_toolbar_logo"
@@ -63,8 +60,7 @@
         <!-- Subtle divider -->
         <View
             android:layout_width="match_parent"
-            android:layout_height="@dimen/divider_height"
-            android:background="@color/divider"/>
+            android:layout_height="@dimen/divider_height"/>
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -89,7 +85,6 @@
                 android:layout_marginHorizontal="@dimen/screen_padding"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="8dp"
-                app:cardBackgroundColor="@color/transparent"
                 app:cardElevation="0dp"
                 app:cardCornerRadius="0dp">
 
@@ -112,16 +107,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Hello, Reader!"
-                            android:textColor="@color/text_primary"
                             android:textSize="22sp"
-                            android:fontFamily="serif"
+                            android:fontFamily="@font/aleo_semibold"
                             android:textStyle="bold"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/label_home_subtitle"
-                            android:textColor="@color/text_secondary"
                             android:textSize="13sp"
                             android:layout_marginTop="4dp"/>
 
@@ -151,7 +144,6 @@
                 <View
                     android:layout_width="3dp"
                     android:layout_height="20dp"
-                    android:background="@color/gold_primary"
                     android:layout_marginEnd="10dp"/>
 
                 <TextView
@@ -159,9 +151,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/label_featured_books"
-                    android:textColor="@color/text_primary"
                     android:textSize="18sp"
-                    android:fontFamily="serif"
+                    android:fontFamily="@font/aleo_semibold"
                     android:textStyle="bold"/>
 
                 <TextView
@@ -169,7 +160,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/label_see_all"
-                    android:textColor="@color/gold_primary"
                     android:textSize="13sp"
                     android:padding="4dp"
                     android:background="?attr/selectableItemBackground"/>
@@ -200,7 +190,6 @@
                 <View
                     android:layout_width="3dp"
                     android:layout_height="20dp"
-                    android:background="@color/gold_primary"
                     android:layout_marginEnd="10dp"/>
 
                 <LinearLayout
@@ -213,16 +202,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/label_our_stores"
-                        android:textColor="@color/text_primary"
                         android:textSize="18sp"
-                        android:fontFamily="serif"
+                        android:fontFamily="@font/aleo_semibold"
                         android:textStyle="bold"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/label_stores_subtitle"
-                        android:textColor="@color/text_secondary"
                         android:textSize="12sp"
                         android:layout_marginTop="2dp"/>
                 </LinearLayout>
@@ -300,11 +287,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:background="@color/bg_secondary"
         app:menu="@menu/bottom_navigation"
-        app:itemIconTint="@color/selector_bottom_nav"
-        app:itemTextColor="@color/selector_bottom_nav"
-        app:itemActiveIndicatorColor="@color/gold_subtle"
         app:elevation="16dp"
         app:selectedItemId="@id/nav_home"/>
 
