@@ -44,10 +44,17 @@
                 android:orientation="vertical"
                 android:gravity="center">
 
+                <ImageView
+                    android:layout_width="81dp"
+                    android:layout_height="112dp"
+                    android:src="@drawable/logo"
+                    android:contentDescription="Logo"
+                    android:layout_marginBottom="@dimen/space100" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/space200"
+                    android:layout_marginTop="@dimen/space100"
                     android:text="@string/app_name"
                     android:textAppearance="?attr/textAppearanceHeadlineMedium" />
 

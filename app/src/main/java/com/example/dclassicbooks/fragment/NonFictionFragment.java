@@ -33,14 +33,12 @@ public class NonFictionFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         List<Book> books = new ArrayList<>();
-        books.add(new Book("Meditations", "Marcus Aurelius", "Philosophy", "Non-Fiction",
-                R.drawable.cover_meditations, 4.8f));
-        books.add(new Book("The Art of War", "Sun Tzu", "Strategy", "Non-Fiction",
-                R.drawable.cover_art_of_war, 4.7f));
-        books.add(new Book("Thinking, Fast and Slow", "Daniel Kahneman", "Psychology", "Non-Fiction",
-                R.drawable.cover_thinking_fast_slow, 4.6f));
-        books.add(new Book("Sapiens", "Yuval Noah Harari", "History", "Non-Fiction",
-                R.drawable.cover_sapiens, 4.5f));
+        books.add(new Book(getString(R.string.book_title_1984), getString(R.string.book_author_orwell), getString(R.string.book_genre_political_science), getString(R.string.book_category_non_fiction),
+                R.drawable.cover_1984, 4.8f));
+        books.add(new Book(getString(R.string.book_title_moby_dick), getString(R.string.book_author_melville), getString(R.string.book_genre_marine_biology), getString(R.string.book_category_non_fiction),
+                R.drawable.cover_moby_dick, 4.5f));
+        books.add(new Book(getString(R.string.book_title_miserables), getString(R.string.book_author_hugo), getString(R.string.book_genre_french_history), getString(R.string.book_category_non_fiction),
+                R.drawable.cover_miserables, 4.9f));
 
         RecyclerView rv = view.findViewById(R.id.rv_books);
         rv.setAdapter(new BooksAdapter(books, book -> {

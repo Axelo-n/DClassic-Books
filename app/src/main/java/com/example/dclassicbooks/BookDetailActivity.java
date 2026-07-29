@@ -30,7 +30,7 @@ public class BookDetailActivity extends AppCompatActivity {
         String title = getIntent().getStringExtra("TITLE");
         String author = getIntent().getStringExtra("AUTHOR");
         String genre = getIntent().getStringExtra("GENRE");
-        int coverResId = getIntent().getIntExtra("COVER_RES_ID", R.drawable.cover_meditations);
+        int coverResId = getIntent().getIntExtra("COVER_RES_ID", R.drawable.cover_1984);
         float rating = getIntent().getFloatExtra("RATING", 4.5f);
 
         Toolbar toolbar = findViewById(R.id.toolbar);

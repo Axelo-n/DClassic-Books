@@ -59,10 +59,10 @@ public class HomeActivity extends AppCompatActivity {
 
         // Featured Books
         List<Book> featured = new ArrayList<>();
-        featured.add(new Book("Meditations", "Marcus Aurelius", "Philosophy", "Non-Fiction", R.drawable.cover_meditations, 4.8f));
-        featured.add(new Book("The Art of War", "Sun Tzu", "Strategy", "Non-Fiction", R.drawable.cover_art_of_war, 4.7f));
-        featured.add(new Book("Pride and Prejudice", "Jane Austen", "Romance", "Fiction", R.drawable.cover_pride_prejudice, 4.9f));
-        featured.add(new Book("1984", "George Orwell", "Dystopia", "Fiction", R.drawable.cover_1984, 4.8f));
+        featured.add(new Book(getString(R.string.book_title_1984), getString(R.string.book_author_orwell), getString(R.string.book_genre_political_science), getString(R.string.book_category_non_fiction), R.drawable.cover_1984, 4.8f));
+        featured.add(new Book(getString(R.string.book_title_moby_dick), getString(R.string.book_author_melville), getString(R.string.book_genre_marine_biology), getString(R.string.book_category_non_fiction), R.drawable.cover_moby_dick, 4.5f));
+        featured.add(new Book(getString(R.string.book_title_hamlet), getString(R.string.book_author_shakespeare), getString(R.string.book_genre_tragedy), getString(R.string.book_category_fiction), R.drawable.cover_hamlet, 4.7f));
+        featured.add(new Book(getString(R.string.book_title_little_prince), getString(R.string.book_author_exupery), getString(R.string.book_genre_fable), getString(R.string.book_category_fiction), R.drawable.cover_little_prince, 4.8f));
 
         RecyclerView rvFeatured = findViewById(R.id.rv_featured_books);
         rvFeatured.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
@@ -79,16 +79,14 @@ public class HomeActivity extends AppCompatActivity {
 
         // Carousel
         List<CarouselAdapter.CarouselItem> carouselItems = new ArrayList<>();
-        carouselItems.add(new CarouselAdapter.CarouselItem(R.drawable.carousel_store_1,
+        carouselItems.add(new CarouselAdapter.CarouselItem(R.drawable.store_sudirman,
                 getString(R.string.store_1_name), getString(R.string.store_1_address)));
-        carouselItems.add(new CarouselAdapter.CarouselItem(R.drawable.carousel_store_2,
+        carouselItems.add(new CarouselAdapter.CarouselItem(R.drawable.store_kemang,
                 getString(R.string.store_2_name), getString(R.string.store_2_address)));
-        carouselItems.add(new CarouselAdapter.CarouselItem(R.drawable.carousel_store_3,
+        carouselItems.add(new CarouselAdapter.CarouselItem(R.drawable.store_kelapa_gading,
                 getString(R.string.store_3_name), getString(R.string.store_3_address)));
-        carouselItems.add(new CarouselAdapter.CarouselItem(R.drawable.carousel_store_4,
+        carouselItems.add(new CarouselAdapter.CarouselItem(R.drawable.store_bsd,
                 getString(R.string.store_4_name), getString(R.string.store_4_address)));
-        carouselItems.add(new CarouselAdapter.CarouselItem(R.drawable.carousel_store_5,
-                "D'Classics Books — Special", "Our exclusive rare books collection"));
 
         vpCarousel = findViewById(R.id.vp_carousel);
         llDots = findViewById(R.id.ll_dots);

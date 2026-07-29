@@ -33,14 +33,12 @@ public class FictionFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         List<Book> books = new ArrayList<>();
-        books.add(new Book("Pride and Prejudice", "Jane Austen", "Romance", "Fiction",
-                R.drawable.cover_pride_prejudice, 4.9f));
-        books.add(new Book("1984", "George Orwell", "Dystopia", "Fiction",
-                R.drawable.cover_1984, 4.8f));
-        books.add(new Book("To Kill a Mockingbird", "Harper Lee", "Classic", "Fiction",
-                R.drawable.cover_mockingbird, 4.7f));
-        books.add(new Book("Crime and Punishment", "Fyodor Dostoevsky", "Classic", "Fiction",
-                R.drawable.cover_crime_punishment, 4.6f));
+        books.add(new Book(getString(R.string.book_title_hamlet), getString(R.string.book_author_shakespeare), getString(R.string.book_genre_tragedy), getString(R.string.book_category_fiction),
+                R.drawable.cover_hamlet, 4.7f));
+        books.add(new Book(getString(R.string.book_title_little_prince), getString(R.string.book_author_exupery), getString(R.string.book_genre_fable), getString(R.string.book_category_fiction),
+                R.drawable.cover_little_prince, 4.8f));
+        books.add(new Book(getString(R.string.book_title_oz), getString(R.string.book_author_baum), getString(R.string.book_genre_fantasy), getString(R.string.book_category_fiction),
+                R.drawable.cover_oz, 4.6f));
 
         RecyclerView rv = view.findViewById(R.id.rv_books);
         rv.setAdapter(new BooksAdapter(books, book -> {

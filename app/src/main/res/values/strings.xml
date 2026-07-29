@@ -65,4 +65,29 @@
     <string name="store_4_name">D\'Classics Books — BSD City</string>
     <string name="store_4_address">Jl. BSD Grand Boulevard No. 99, Tangerang</string>
     <string name="store_4_phone">+62 21 5555 0404</string>
+
+    <!-- Book Details -->
+    <string name="book_title_1984">1984</string>
+    <string name="book_title_moby_dick">Moby-Dick</string>
+    <string name="book_title_miserables">Les Misérables</string>
+    <string name="book_title_hamlet">Hamlet</string>
+    <string name="book_title_little_prince">The Little Prince</string>
+    <string name="book_title_oz">The Wonderful Wizard of Oz</string>
+
+    <string name="book_author_orwell">George Orwell</string>
+    <string name="book_author_melville">Herman Melville</string>
+    <string name="book_author_hugo">Victor Hugo</string>
+    <string name="book_author_shakespeare">William Shakespeare</string>
+    <string name="book_author_exupery">Antoine de Saint-Exupéry</string>
+    <string name="book_author_baum">L. Frank Baum</string>
+
+    <string name="book_genre_political_science">Politics</string>
+    <string name="book_genre_marine_biology">Biology</string>
+    <string name="book_genre_french_history">History</string>
+    <string name="book_genre_tragedy">Tragedy</string>
+    <string name="book_genre_fable">Fable</string>
+    <string name="book_genre_fantasy">Fantasy</string>
+
+    <string name="book_category_non_fiction">Non-Fiction</string>
+    <string name="book_category_fiction">Fiction</string>
 </resources>
