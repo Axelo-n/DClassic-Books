@@ -2,12 +2,11 @@
 <resources>
     <string name="app_name">D\'Classics Books</string>
 
-    <string name="sign_in">Sign In</string>
     <string name="welcome_back">Welcome Back</string>
     <string name="login_subtitle">Your literary journey continues</string>
     <string name="username_hint">Username</string>
     <string name="password_hint">Password</string>
-    <string name="btn_login">Continue Reading</string>
+    <string name="btn_login">Login</string>
     <string name="error_username_empty">Please enter your username</string>
     <string name="error_password_empty">Please enter your password</string>
     <string name="error_password_alphanumeric">Password must be alphanumeric only</string>
@@ -21,6 +20,9 @@
     <string name="nav_home">Home</string>
     <string name="nav_books">Books</string>
     <string name="nav_store">Store</string>
+    <string name="action_home">Home</string>
+    <string name="action_books">Books</string>
+    <string name="action_stores">Stores</string>
     <string name="action_logout">Logout</string>
     <string name="logout_title">Logout</string>
     <string name="logout_message">Are you sure you want to logout?</string>

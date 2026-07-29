@@ -46,6 +46,11 @@
         <item name="textAppearanceLabelMedium">@style/Typography.LabelMedium</item>
         <item name="textAppearanceLabelSmall">@style/Typography.LabelSmall</item>
 
+        <item name="android:textAppearanceLargePopupMenu">?attr/textAppearanceLabelLarge</item>
+        <item name="android:textAppearanceSmallPopupMenu">?attr/textAppearanceLabelLarge</item>
+        <item name="textAppearanceLargePopupMenu">?attr/textAppearanceLabelLarge</item>
+        <item name="textAppearanceSmallPopupMenu">?attr/textAppearanceLabelLarge</item>
+
         <item name="materialCardViewStyle">@style/Widget.DClassicsBooks.CardView</item>
     </style>
 

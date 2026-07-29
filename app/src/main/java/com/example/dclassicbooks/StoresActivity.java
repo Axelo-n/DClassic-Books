@@ -76,8 +76,25 @@ public class StoresActivity extends AppCompatActivity {
     private void showOverflowMenu(View anchor) {
         PopupMenu popup = new PopupMenu(this, anchor);
         popup.getMenuInflater().inflate(R.menu.menu_overflow, popup.getMenu());
+        
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
+            popup.setForceShowIcon(true);
+        }
+        
+        popup.getMenu().findItem(R.id.action_stores).setVisible(false);
+        
         popup.setOnMenuItemClickListener(item -> {
-            if (item.getItemId() == R.id.action_logout) {
+            int itemId = item.getItemId();
+            if (itemId == R.id.action_home) {
+                navigateToActivity(HomeActivity.class);
+                return true;
+            } else if (itemId == R.id.action_books) {
+                navigateToActivity(BooksActivity.class);
+                return true;
+            } else if (itemId == R.id.action_stores) {
+                navigateToActivity(StoresActivity.class);
+                return true;
+            } else if (itemId == R.id.action_logout) {
                 showLogoutDialog();
                 return true;
             }
