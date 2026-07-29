@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true"
-        app:elevation="0dp">
+        app:elevation="@dimen/elevation_level0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -58,11 +58,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:layout_marginStart="@dimen/space200"
-        android:layout_marginEnd="@dimen/space200"
-        android:layout_marginBottom="@dimen/space200"
-        app:cardCornerRadius="28dp"
-        app:cardElevation="8dp">
+        android:layout_marginStart="@dimen/space250"
+        android:layout_marginEnd="@dimen/space250"
+        android:layout_marginBottom="@dimen/space100"
+        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.ExtraLarge"
+        app:cardElevation="@dimen/elevation_level3">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_nav"

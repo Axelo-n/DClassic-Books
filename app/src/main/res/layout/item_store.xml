@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="@dimen/space200"
-    app:cardCornerRadius="20dp"
-    app:cardElevation="0dp">
+    app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Large"
+    app:cardElevation="@dimen/elevation_level0">
 
     <LinearLayout
         android:layout_width="match_parent"

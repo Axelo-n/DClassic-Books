@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="232dp"
     android:layout_margin="@dimen/space075"
-    app:cardCornerRadius="18dp"
-    app:cardElevation="0dp">
+    app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Large"
+    app:cardElevation="@dimen/elevation_level0">
 
     <include layout="@layout/layout_book_content" />
 </com.google.android.material.card.MaterialCardView>
