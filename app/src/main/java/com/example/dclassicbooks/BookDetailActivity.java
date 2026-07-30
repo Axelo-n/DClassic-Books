@@ -24,7 +24,7 @@ public class BookDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
+        androidx.activity.EdgeToEdge.enable(this);
         setContentView(R.layout.activity_book_detail);
 
         String title = getIntent().getStringExtra("TITLE");

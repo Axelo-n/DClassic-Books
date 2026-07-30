@@ -30,7 +30,7 @@ public class StoresActivity extends AppCompatActivity {
 
         Window window = getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        window.setStatusBarColor(ContextCompat.getColor(this, R.color.surface));
+        window.setStatusBarColor(ContextCompat.getColor(this, R.color.surface_container));
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             window.getInsetsController().setSystemBarsAppearance(
                     WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS,
