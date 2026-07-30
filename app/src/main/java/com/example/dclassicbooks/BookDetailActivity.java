@@ -2,17 +2,19 @@ package com.example.dclassicbooks;
 
 import android.os.Bundle;
 import android.text.Editable;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.appbar.CollapsingToolbarLayout;
+import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
@@ -22,9 +24,7 @@ public class BookDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Window window = getWindow();
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         setContentView(R.layout.activity_book_detail);
 
         String title = getIntent().getStringExtra("TITLE");
@@ -33,13 +33,23 @@ public class BookDetailActivity extends AppCompatActivity {
         int coverResId = getIntent().getIntExtra("COVER_RES_ID", R.drawable.cover_1984);
         float rating = getIntent().getFloatExtra("RATING", 4.5f);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        MaterialToolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setTitle("");
         }
         toolbar.setNavigationOnClickListener(v -> finish());
+
+        // Pad toolbar below status bar so back button is accessible
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.app_bar), (v, insets) -> {
+            Insets statusBarInsets = insets.getInsets(WindowInsetsCompat.Type.statusBars());
+            android.view.ViewGroup.MarginLayoutParams lp =
+                    (android.view.ViewGroup.MarginLayoutParams) toolbar.getLayoutParams();
+            lp.topMargin = statusBarInsets.top;
+            toolbar.setLayoutParams(lp);
+            return insets;
+        });
 
         CollapsingToolbarLayout collapsingToolbar = findViewById(R.id.collapsing_toolbar);
         collapsingToolbar.setTitle(title != null ? title : "");
@@ -95,3 +105,4 @@ public class BookDetailActivity extends AppCompatActivity {
         return e == null ? "" : e.toString().trim();
     }
 }
+
