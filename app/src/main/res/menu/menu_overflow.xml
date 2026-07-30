@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/action_home"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/home_24px"
+        android:iconTint="?attr/colorOnSurfaceVariant"
         android:title="@string/action_home"/>
     <item
         android:id="@+id/action_books"
-        android:icon="@drawable/ic_menu_book"
+        android:icon="@drawable/menu_book_24px"
+        android:iconTint="?attr/colorOnSurfaceVariant"
         android:title="@string/action_books"/>
     <item
         android:id="@+id/action_stores"
-        android:icon="@drawable/ic_store"
+        android:icon="@drawable/storefront_24px"
+        android:iconTint="?attr/colorOnSurfaceVariant"
         android:title="@string/action_stores"/>
     <item
         android:id="@+id/action_logout"
-        android:icon="@drawable/ic_logout"
+        android:icon="@drawable/logout_24px"
+        android:iconTint="?attr/colorOnSurfaceVariant"
         android:title="@string/action_logout"/>
 </menu>

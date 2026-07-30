@@ -46,7 +46,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/address"
                 android:textAppearance="?attr/textAppearanceBodyMedium"
-                android:drawableStart="@drawable/ic_location_on"
+                android:drawableStart="@drawable/location_on_24px"
+                app:drawableTint="?attr/colorOnSurfaceVariant"
                 android:drawablePadding="@dimen/space125"
                 android:layout_marginBottom="@dimen/space125"
                 android:gravity="center_vertical"/>
@@ -58,7 +59,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/phone"
                 android:textAppearance="?attr/textAppearanceBodyMedium"
-                android:drawableStart="@drawable/ic_phone"
+                android:drawableStart="@drawable/call_24px"
+                app:drawableTint="?attr/colorOnSurfaceVariant"
                 android:drawablePadding="@dimen/space125"
                 android:layout_marginBottom="@dimen/space125"
                 android:gravity="center_vertical"/>
@@ -69,7 +71,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/store_hours"
                 android:textAppearance="?attr/textAppearanceBodyMedium"
-                android:drawableStart="@drawable/ic_access_time"
+                android:drawableStart="@drawable/schedule_24px"
+                app:drawableTint="?attr/colorOnSurfaceVariant"
                 android:drawablePadding="@dimen/space125"
                 android:gravity="center_vertical"/>
 
