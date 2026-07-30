@@ -69,7 +69,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Greeting Card -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -134,7 +133,6 @@
                 </RelativeLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Featured Books -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -168,7 +166,6 @@
                 android:orientation="horizontal"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
-            <!-- Our Stores -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -192,7 +189,6 @@
 
             </LinearLayout>
 
-            <!-- Carousel -->
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -235,7 +231,6 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <!-- Dot Indicators -->
             <LinearLayout
                 android:id="@+id/ll_dots"
                 android:layout_width="wrap_content"
@@ -249,7 +244,6 @@
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
-    <!-- Floating Bottom Navigation -->
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

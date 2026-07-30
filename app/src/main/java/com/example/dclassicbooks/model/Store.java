@@ -1,10 +1,10 @@
 package com.example.dclassicbooks.model;
 
 public class Store {
-    private String name;
-    private String address;
-    private String phone;
-    private int imageResId;
+    private final String name;
+    private final String address;
+    private final String phone;
+    private final int imageResId;
 
     public Store(String name, String address, String phone, int imageResId) {
         this.name = name;

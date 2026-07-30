@@ -43,7 +43,6 @@ public class BookDetailActivity extends AppCompatActivity {
             btnBack.setOnClickListener(v -> finish());
         }
 
-        // Pad toolbar below status bar so back button is accessible
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.app_bar), (v, insets) -> {
             Insets statusBarInsets = insets.getInsets(WindowInsetsCompat.Type.statusBars());
             android.view.ViewGroup.MarginLayoutParams lp =

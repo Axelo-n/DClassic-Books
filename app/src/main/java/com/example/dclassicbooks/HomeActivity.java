@@ -32,7 +32,7 @@ public class HomeActivity extends AppCompatActivity {
 
     private ViewPager2 vpCarousel;
     private LinearLayout llDots;
-    private List<ImageView> dots = new ArrayList<>();
+    private final List<ImageView> dots = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,17 +55,14 @@ public class HomeActivity extends AppCompatActivity {
         String username = getIntent().getStringExtra("USERNAME");
         if (username == null) username = getString(R.string.reader);
 
-        // Greeting
         TextView tvGreeting = findViewById(R.id.tv_greeting);
         TextView tvUsername = findViewById(R.id.tv_username);
         tvGreeting.setText(R.string.greeting_hello);
         tvUsername.setText(username);
 
-        // Overflow menu
         ImageButton btnOverflow = findViewById(R.id.btn_overflow);
         btnOverflow.setOnClickListener(v -> showOverflowMenu(v));
 
-        // Featured Books
         List<Book> featured = new ArrayList<>();
         featured.add(new Book(getString(R.string.book_title_1984), getString(R.string.book_author_orwell), getString(R.string.book_genre_political_science), getString(R.string.book_category_non_fiction), R.drawable.cover_1984, 4.8f));
         featured.add(new Book(getString(R.string.book_title_moby_dick), getString(R.string.book_author_melville), getString(R.string.book_genre_marine_biology), getString(R.string.book_category_non_fiction), R.drawable.cover_moby_dick, 4.5f));
@@ -85,7 +82,6 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(intent);
         }));
 
-        // Carousel
         List<CarouselAdapter.CarouselItem> carouselItems = new ArrayList<>();
         carouselItems.add(new CarouselAdapter.CarouselItem(R.drawable.store_sudirman,
                 getString(R.string.store_1_name), getString(R.string.store_1_address)));
@@ -120,7 +116,6 @@ public class HomeActivity extends AppCompatActivity {
             if (cur < Integer.MAX_VALUE - 1) vpCarousel.setCurrentItem(cur + 1);
         });
 
-        // Bottom Navigation
         BottomNavigationView bottomNav = findViewById(R.id.bottom_nav);
         bottomNav.setSelectedItemId(R.id.nav_home);
         bottomNav.setOnItemSelectedListener(item -> {

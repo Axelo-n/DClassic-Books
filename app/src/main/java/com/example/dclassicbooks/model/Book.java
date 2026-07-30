@@ -1,12 +1,12 @@
 package com.example.dclassicbooks.model;
 
 public class Book {
-    private String title;
-    private String author;
-    private String genre;
-    private String category;
-    private int coverResId;
-    private float rating;
+    private final String title;
+    private final String author;
+    private final String genre;
+    private final String category;
+    private final int coverResId;
+    private final float rating;
 
     public Book(String title, String author, String genre, String category, int coverResId, float rating) {
         this.title = title;

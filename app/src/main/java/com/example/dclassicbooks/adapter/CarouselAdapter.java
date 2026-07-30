@@ -15,16 +15,7 @@ import java.util.List;
 
 public class CarouselAdapter extends RecyclerView.Adapter<CarouselAdapter.ViewHolder> {
 
-    public static class CarouselItem {
-        public final int imageResId;
-        public final String name;
-        public final String address;
-
-        public CarouselItem(int imageResId, String name, String address) {
-            this.imageResId = imageResId;
-            this.name = name;
-            this.address = address;
-        }
+    public record CarouselItem(int imageResId, String name, String address) {
     }
 
     private final List<CarouselItem> items;

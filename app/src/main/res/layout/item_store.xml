@@ -15,7 +15,6 @@
             android:paddingTop="@dimen/space200"
             android:paddingBottom="@dimen/space250">
 
-            <!-- Store name with decorative accent line -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -39,7 +38,6 @@
 
             </LinearLayout>
 
-            <!-- Address row -->
             <TextView
                 android:id="@+id/tv_store_address"
                 android:layout_width="match_parent"
@@ -52,7 +50,6 @@
                 android:layout_marginBottom="@dimen/space125"
                 android:gravity="center_vertical"/>
 
-            <!-- Phone row -->
             <TextView
                 android:id="@+id/tv_store_phone"
                 android:layout_width="match_parent"
@@ -65,7 +62,6 @@
                 android:layout_marginBottom="@dimen/space125"
                 android:gravity="center_vertical"/>
 
-            <!-- Hours row -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

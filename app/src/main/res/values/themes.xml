@@ -57,42 +57,9 @@
     <!-- Default theme (API < 35) -->
     <style name="Theme.DClassicsBooks" parent="Theme.DClassicsBooks.Base"/>
 
-    <!-- ── Widget styles ─────────────────────────────────────────────────── -->
 
-<!--    <style name="Widget.DClassicsBooks.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">-->
-<!--        <item name="boxStrokeColor">@color/selector_text_input_stroke</item>-->
-<!--        <item name="hintTextColor">@color/selector_hint_text</item>-->
-<!--        <item name="boxBackgroundColor">@color/surface_light</item>-->
-<!--        <item name="boxCornerRadiusTopStart">14dp</item>-->
-<!--        <item name="boxCornerRadiusTopEnd">14dp</item>-->
-<!--        <item name="boxCornerRadiusBottomStart">14dp</item>-->
-<!--        <item name="boxCornerRadiusBottomEnd">14dp</item>-->
-<!--        <item name="android:textColorHint">@color/text_hint</item>-->
-<!--        <item name="errorTextColor">@color/error</item>-->
-<!--        <item name="errorIconDrawable">@null</item>-->
-<!--    </style>-->
 
-<!--    <style name="Widget.DClassicsBooks.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">-->
-<!--        <item name="itemIconTint">@color/selector_bottom_nav</item>-->
-<!--        <item name="itemTextColor">@color/selector_bottom_nav</item>-->
-<!--        <item name="backgroundTint">@color/surface</item>-->
-<!--        <item name="elevation">0dp</item>-->
-<!--        <item name="itemIconSize">24dp</item>-->
-<!--        <item name="paddingBottomSystemWindowInsets">false</item>-->
-<!--    </style>-->
 
-<!--    <style name="Widget.DClassicsBooks.TabLayout" parent="Widget.Material3.TabLayout">-->
-<!--        <item name="tabTextColor">@color/text_hint</item>-->
-<!--        <item name="tabSelectedTextColor">@color/gold_dark</item>-->
-<!--        <item name="tabIndicatorColor">@color/gold_primary</item>-->
-<!--        <item name="tabBackground">@color/surface</item>-->
-<!--        <item name="tabTextAppearance">@style/TextAppearance.DClassicsBooks.Tab</item>-->
-<!--        <item name="tabIndicatorHeight">3dp</item>-->
-<!--    </style>-->
 
-<!--    <style name="TextAppearance.DClassicsBooks.Tab" parent="TextAppearance.Material3.LabelLarge">-->
-<!--        <item name="android:textSize">14sp</item>-->
-<!--        <item name="fontFamily">sans-serif-medium</item>-->
-<!--    </style>-->
 
 </resources>
