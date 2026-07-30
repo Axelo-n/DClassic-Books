@@ -31,15 +31,17 @@ public class BookDetailActivity extends AppCompatActivity {
         String author = getIntent().getStringExtra("AUTHOR");
         String genre = getIntent().getStringExtra("GENRE");
         int coverResId = getIntent().getIntExtra("COVER_RES_ID", R.drawable.cover_1984);
-        float rating = getIntent().getFloatExtra("RATING", 4.5f);
 
         MaterialToolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setTitle("");
         }
-        toolbar.setNavigationOnClickListener(v -> finish());
+
+        Button btnBack = findViewById(R.id.btn_back);
+        if (btnBack != null) {
+            btnBack.setOnClickListener(v -> finish());
+        }
 
         // Pad toolbar below status bar so back button is accessible
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.app_bar), (v, insets) -> {
@@ -60,12 +62,10 @@ public class BookDetailActivity extends AppCompatActivity {
         TextView tvTitle = findViewById(R.id.tv_title);
         TextView tvAuthor = findViewById(R.id.tv_author);
         TextView tvGenre = findViewById(R.id.tv_genre);
-        TextView tvRating = findViewById(R.id.tv_rating);
 
         tvTitle.setText(title);
         tvAuthor.setText(author);
         tvGenre.setText(genre);
-        tvRating.setText(String.valueOf(rating));
 
         TextInputLayout tilAddress = findViewById(R.id.til_address);
         TextInputLayout tilPhone = findViewById(R.id.til_phone);
@@ -90,14 +90,21 @@ public class BookDetailActivity extends AppCompatActivity {
                 valid = false;
             }
 
-            if (valid) {
+            if (!valid) {
                 new AlertDialog.Builder(this)
-                        .setTitle(R.string.order_success_title)
-                        .setMessage(R.string.order_success_message)
-                        .setPositiveButton(R.string.btn_ok, (d, w) -> finish())
-                        .setCancelable(false)
+                        .setTitle(R.string.error_dialog_title)
+                        .setMessage(R.string.error_dialog_message)
+                        .setPositiveButton(android.R.string.ok, null)
                         .show();
+                return;
             }
+
+            new AlertDialog.Builder(this)
+                    .setTitle(R.string.order_success_title)
+                    .setMessage(R.string.order_success_message)
+                    .setPositiveButton(R.string.btn_ok, (d, w) -> finish())
+                    .setCancelable(false)
+                    .show();
         });
     }
 

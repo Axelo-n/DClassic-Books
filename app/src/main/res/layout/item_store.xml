@@ -20,14 +20,29 @@
             android:paddingTop="@dimen/space200"
             android:paddingBottom="@dimen/space250">
 
-            <TextView
-                android:id="@+id/tv_store_name"
-                android:layout_width="wrap_content"
+            <!-- Store name with decorative accent line -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Store Name"
-                android:textAppearance="?attr/textAppearanceTitleMedium"
-                android:layout_marginBottom="@dimen/space200"/>
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/space200">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/accent"
+                    android:layout_marginEnd="@dimen/space125"/>
+
+                <TextView
+                    android:id="@+id/tv_store_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Store Name"
+                    android:textAppearance="?attr/textAppearanceTitleMedium"/>
+
+            </LinearLayout>
 
             <!-- Address row -->
             <LinearLayout
@@ -101,15 +116,6 @@
                     android:layout_marginStart="@dimen/space125"/>
 
             </LinearLayout>
-
-            <!-- Visit Button -->
-            <Button
-                android:id="@+id/btn_visit_store"
-                android:layout_width="match_parent"
-                android:layout_height="44dp"
-                android:layout_marginTop="@dimen/space200"
-                android:text="@string/btn_visit_store"
-                android:textAppearance="?attr/textAppearanceLabelMedium"/>
 
         </LinearLayout>
     </LinearLayout>

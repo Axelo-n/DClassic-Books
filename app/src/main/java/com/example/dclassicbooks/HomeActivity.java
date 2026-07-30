@@ -1,9 +1,11 @@
 package com.example.dclassicbooks;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+import android.view.WindowInsetsController;
 import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -13,6 +15,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
@@ -23,7 +26,6 @@ import com.example.dclassicbooks.model.Book;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
@@ -38,6 +40,15 @@ public class HomeActivity extends AppCompatActivity {
 
         Window window = getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.setStatusBarColor(ContextCompat.getColor(this, R.color.surface));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            window.getInsetsController().setSystemBarsAppearance(
+                    WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS,
+                    WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS);
+        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            window.getDecorView().setSystemUiVisibility(
+                    View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+        }
 
         setContentView(R.layout.activity_home);
 
@@ -47,10 +58,7 @@ public class HomeActivity extends AppCompatActivity {
         // Greeting
         TextView tvGreeting = findViewById(R.id.tv_greeting);
         TextView tvUsername = findViewById(R.id.tv_username);
-        int hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
-        if (hour < 12) tvGreeting.setText(R.string.greeting_morning);
-        else if (hour < 17) tvGreeting.setText(R.string.greeting_afternoon);
-        else tvGreeting.setText(R.string.greeting_evening);
+        tvGreeting.setText(R.string.greeting_hello);
         tvUsername.setText(username);
 
         // Overflow menu

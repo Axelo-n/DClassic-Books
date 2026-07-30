@@ -102,7 +102,7 @@
                             android:id="@+id/tv_greeting"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/greeting_morning"
+                            android:text="@string/greeting_hello"
                             android:textAppearance="?attr/textAppearanceLabelMedium"
                             android:textColor="@color/white"/>
 
@@ -116,10 +116,11 @@
                             android:textColor="@color/white"/>
 
                         <View
-                            android:layout_width="32dp"
-                            android:layout_height="2dp"
+                            android:layout_width="56dp"
+                            android:layout_height="4dp"
                             android:layout_marginTop="@dimen/space125"
-                            android:layout_marginBottom="@dimen/space125"/>
+                            android:layout_marginBottom="@dimen/space125"
+                            android:background="@color/white"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -141,6 +142,12 @@
                 android:paddingHorizontal="@dimen/space250"
                 android:paddingTop="@dimen/space300"
                 android:paddingBottom="@dimen/space175">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/accent"
+                    android:layout_marginEnd="@dimen/space125"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -169,6 +176,12 @@
                 android:paddingHorizontal="@dimen/space250"
                 android:paddingTop="@dimen/space300"
                 android:paddingBottom="@dimen/space175">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/accent"
+                    android:layout_marginEnd="@dimen/space125"/>
 
                 <TextView
                     android:layout_width="wrap_content"

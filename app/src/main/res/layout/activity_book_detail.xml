@@ -39,9 +39,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:elevation="3dp"
-                app:layout_collapseMode="pin"
-                app:navigationIconTint="@color/white"
-                app:navigationIcon="@drawable/ic_arrow_back"/>
+                app:layout_collapseMode="pin">
+
+                <Button
+                    android:id="@+id/btn_back"
+                    style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_arrow_back"
+                    android:contentDescription="Back" />
+
+            </com.google.android.material.appbar.MaterialToolbar>
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
@@ -68,7 +76,7 @@
                 android:paddingTop="@dimen/space300"
                 android:paddingBottom="@dimen/space400">
 
-                <!-- Genre + Rating row -->
+                <!-- Genre row -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -87,23 +95,6 @@
                         android:paddingHorizontal="@dimen/space125"
                         android:paddingVertical="@dimen/space050"/>
 
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"/>
-
-                    <ImageView
-                        android:layout_width="14dp"
-                        android:layout_height="14dp"
-                        android:src="@drawable/ic_star"
-                        android:contentDescription="Rating"/>
-                    <TextView
-                        android:id="@+id/tv_rating"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="4.8"
-                        android:textAppearance="?attr/textAppearanceLabelLarge"
-                        android:layout_marginStart="@dimen/space050"/>
                 </LinearLayout>
 
                 <!-- Title -->
@@ -132,12 +123,27 @@
                     android:layout_marginVertical="@dimen/space300"/>
 
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <!-- Order This Book heading with decorative line -->
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/order_book"
-                    android:textAppearance="?attr/textAppearanceHeadlineSmall"
-                    android:layout_marginBottom="@dimen/space200"/>
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/space200">
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/accent"
+                        android:layout_marginEnd="@dimen/space125"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/order_book"
+                        android:textAppearance="?attr/textAppearanceHeadlineSmall"/>
+
+                </LinearLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"

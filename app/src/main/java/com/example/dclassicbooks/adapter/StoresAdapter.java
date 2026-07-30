@@ -37,8 +37,6 @@ public class StoresAdapter extends RecyclerView.Adapter<StoresAdapter.ViewHolder
         holder.tvStoreName.setText(store.getName());
         holder.tvStoreAddress.setText(store.getAddress());
         holder.tvStorePhone.setText(store.getPhone());
-        holder.btnVisitStore.setOnClickListener(v ->
-                Toast.makeText(v.getContext(), "Visiting " + store.getName(), Toast.LENGTH_SHORT).show());
     }
 
     @Override
@@ -46,14 +44,12 @@ public class StoresAdapter extends RecyclerView.Adapter<StoresAdapter.ViewHolder
 
     static class ViewHolder extends RecyclerView.ViewHolder {
         TextView tvStoreName, tvStoreAddress, tvStorePhone;
-        Button btnVisitStore;
 
         ViewHolder(View itemView) {
             super(itemView);
             tvStoreName = itemView.findViewById(R.id.tv_store_name);
             tvStoreAddress = itemView.findViewById(R.id.tv_store_address);
             tvStorePhone = itemView.findViewById(R.id.tv_store_phone);
-            btnVisitStore = itemView.findViewById(R.id.btn_visit_store);
         }
     }
 }

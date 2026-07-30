@@ -11,9 +11,7 @@
     <string name="error_password_empty">Please enter your password</string>
     <string name="error_password_alphanumeric">Password must be alphanumeric only</string>
 
-    <string name="greeting_morning">Good Morning</string>
-    <string name="greeting_afternoon">Good Afternoon</string>
-    <string name="greeting_evening">Good Evening</string>
+    <string name="greeting_hello">Hello,</string>
     <string name="greeting_subtitle">What will you read today?</string>
     <string name="featured_books">Featured Books</string>
     <string name="our_stores">Our Stores</string>
@@ -39,6 +37,8 @@
     <string name="btn_buy">Place Order</string>
     <string name="error_address_empty">Please enter your delivery address</string>
     <string name="error_phone_empty">Please enter your phone number</string>
+    <string name="error_dialog_title">Required Fields Missing</string>
+    <string name="error_dialog_message">Please fill in all required fields before placing your order.</string>
     <string name="order_success_title">Order Placed!</string>
     <string name="order_success_message">Your order has been received. We\'ll contact you shortly to confirm delivery details.</string>
     <string name="btn_ok">Great!</string>
@@ -48,7 +48,6 @@
     <string name="locations_count">4 locations across the city</string>
     <string name="store_open">OPEN</string>
     <string name="store_hours">Mon–Sat: 09:00 – 21:00</string>
-    <string name="btn_visit_store">Visit Store</string>
 
     <string name="store_1_name">D\'Classics Books — Sudirman</string>
     <string name="store_1_address">Jl. Jenderal Sudirman No. 45, Jakarta Pusat</string>
