@@ -42,7 +42,6 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.ViewHolder> 
         holder.ivCover.setImageResource(book.getCoverResId());
         holder.tvTitle.setText(book.getTitle());
         holder.tvAuthor.setText(book.getAuthor());
-        holder.tvGenre.setText(book.getGenre());
         holder.itemView.setOnClickListener(v -> listener.onBookClick(book));
     }
 
@@ -51,14 +50,13 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.ViewHolder> 
 
     static class ViewHolder extends RecyclerView.ViewHolder {
         ImageView ivCover;
-        TextView tvTitle, tvAuthor, tvGenre;
+        TextView tvTitle, tvAuthor;
 
         ViewHolder(View itemView) {
             super(itemView);
             ivCover = itemView.findViewById(R.id.iv_cover);
             tvTitle = itemView.findViewById(R.id.tv_title);
             tvAuthor = itemView.findViewById(R.id.tv_author);
-            tvGenre = itemView.findViewById(R.id.tv_genre);
         }
     }
 }
