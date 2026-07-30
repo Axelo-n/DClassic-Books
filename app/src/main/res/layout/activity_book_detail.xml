@@ -24,7 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:contentDescription="Book cover"
+                android:contentDescription="@string/book_cover"
                 app:layout_collapseMode="parallax"/>
 
             <!-- Gradient at bottom edge of cover -->
@@ -47,7 +47,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:icon="@drawable/ic_arrow_back"
-                    android:contentDescription="Back" />
+                    android:contentDescription="@string/back" />
 
             </com.google.android.material.appbar.MaterialToolbar>
 
@@ -87,7 +87,7 @@
                         android:id="@+id/tv_genre"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Philosophy"
+                        android:text="@string/philosophy"
                         android:background="@drawable/bg_badge_genre"
                         android:textAppearance="?attr/textAppearanceLabelSmall"
                         android:textAllCaps="true"
@@ -102,7 +102,7 @@
                     android:id="@+id/tv_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Book Title"
+                    android:text="@string/book_title"
                     android:textAppearance="?attr/textAppearanceHeadlineMedium"
                     android:layout_marginTop="@dimen/space175"
                     android:lineSpacingMultiplier="1.1"/>
@@ -112,7 +112,7 @@
                     android:id="@+id/tv_author"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Author Name"
+                    android:text="@string/author_name"
                     android:textAppearance="?attr/textAppearanceBodyLarge"
                     android:layout_marginTop="@dimen/space050"/>
 

@@ -29,7 +29,7 @@
                     android:layout_width="81dp"
                     android:layout_height="112dp"
                     android:src="@drawable/logo"
-                    android:contentDescription="Logo"
+                    android:contentDescription="@string/logo"
                     android:layout_marginBottom="@dimen/space100" />
 
                 <TextView
@@ -80,7 +80,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Login to continue"
+                            android:text="@string/login_to_continue"
                             android:textAppearance="?attr/textAppearanceBodyMedium"/>
                     </LinearLayout>
 

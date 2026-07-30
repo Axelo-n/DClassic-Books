@@ -53,7 +53,7 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         String username = getIntent().getStringExtra("USERNAME");
-        if (username == null) username = "Reader";
+        if (username == null) username = getString(R.string.reader);
 
         // Greeting
         TextView tvGreeting = findViewById(R.id.tv_greeting);

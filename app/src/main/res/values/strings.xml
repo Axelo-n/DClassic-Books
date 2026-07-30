@@ -87,4 +87,20 @@
 
     <string name="book_category_non_fiction">Non-Fiction</string>
     <string name="book_category_fiction">Fiction</string>
+    <string name="book_cover">Book cover</string>
+    <string name="back">Back</string>
+    <string name="philosophy">Philosophy</string>
+    <string name="book_title">Book Title</string>
+    <string name="author_name">Author Name</string>
+    <string name="menu">Menu</string>
+    <string name="reader">Reader</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="logo">Logo</string>
+    <string name="login_to_continue">Login to continue</string>
+    <string name="store">Store</string>
+    <string name="store_name">Store Name</string>
+    <string name="address">Address</string>
+    <string name="phone">Phone</string>
+    <string name="author">Author</string>
 </resources>
