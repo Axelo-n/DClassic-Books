@@ -45,7 +45,7 @@ public class HomeActivity extends AppCompatActivity {
             window.getInsetsController().setSystemBarsAppearance(
                     WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS,
                     WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS);
-        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+        } else {
             window.getDecorView().setSystemUiVisibility(
                     View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         }

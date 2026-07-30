@@ -35,7 +35,7 @@ public class StoresActivity extends AppCompatActivity {
             window.getInsetsController().setSystemBarsAppearance(
                     WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS,
                     WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS);
-        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+        } else {
             window.getDecorView().setSystemUiVisibility(
                     View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         }
@@ -44,13 +44,13 @@ public class StoresActivity extends AppCompatActivity {
 
         List<Store> stores = new ArrayList<>();
         stores.add(new Store(getString(R.string.store_1_name), getString(R.string.store_1_address),
-                getString(R.string.store_1_phone), R.drawable.carousel_store_1));
+                getString(R.string.store_1_phone), R.drawable.store_sudirman));
         stores.add(new Store(getString(R.string.store_2_name), getString(R.string.store_2_address),
-                getString(R.string.store_2_phone), R.drawable.carousel_store_2));
+                getString(R.string.store_2_phone), R.drawable.store_kemang));
         stores.add(new Store(getString(R.string.store_3_name), getString(R.string.store_3_address),
-                getString(R.string.store_3_phone), R.drawable.carousel_store_3));
+                getString(R.string.store_3_phone), R.drawable.store_kelapa_gading));
         stores.add(new Store(getString(R.string.store_4_name), getString(R.string.store_4_address),
-                getString(R.string.store_4_phone), R.drawable.carousel_store_4));
+                getString(R.string.store_4_phone), R.drawable.store_bsd));
 
         RecyclerView rvStores = findViewById(R.id.rv_stores);
         rvStores.setAdapter(new StoresAdapter(stores));

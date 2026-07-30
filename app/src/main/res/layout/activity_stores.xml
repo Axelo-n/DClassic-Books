@@ -38,28 +38,16 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:text="@string/locations_count"
+            android:textAppearance="?attr/textAppearanceLabelMedium"
+            android:drawableStart="@drawable/ic_location_on"
+            android:drawablePadding="@dimen/space100"
             android:gravity="center_vertical"
             android:paddingHorizontal="@dimen/space250"
-            android:paddingVertical="@dimen/space150">
-
-            <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:src="@drawable/ic_location_on"
-                android:contentDescription="@null"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/locations_count"
-                android:textAppearance="?attr/textAppearanceLabelMedium"
-                android:layout_marginStart="@dimen/space100"/>
-
-        </LinearLayout>
+            android:paddingVertical="@dimen/space150"/>
 
         <View
             android:layout_width="match_parent"

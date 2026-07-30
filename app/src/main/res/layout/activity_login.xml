@@ -5,18 +5,14 @@
     android:layout_height="match_parent"
     android:fillViewport="true">
 
-    <RelativeLayout
+    <!-- Main centered content -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="600dp">
-
-        <!-- Main centered content -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:orientation="vertical"
-            android:paddingVertical="@dimen/space400">
+        android:minHeight="600dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/space400">
 
             <!-- Logo and Text -->
             <LinearLayout
@@ -129,7 +125,5 @@
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-        </LinearLayout>
-
-    </RelativeLayout>
+    </LinearLayout>
 </ScrollView>

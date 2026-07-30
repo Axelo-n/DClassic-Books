@@ -28,7 +28,6 @@
             android:text="Book Title"
             android:textAppearance="?attr/textAppearanceTitleMedium"
             android:maxLines="2"
-            android:lineHeight="20sp"
             android:ellipsize="end"
             android:layout_marginTop="@dimen/space050"/>
 

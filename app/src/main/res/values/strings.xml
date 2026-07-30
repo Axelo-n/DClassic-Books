@@ -42,11 +42,9 @@
     <string name="order_success_title">Order Placed!</string>
     <string name="order_success_message">Your order has been received. We\'ll contact you shortly to confirm delivery details.</string>
     <string name="btn_ok">Great!</string>
-    <string name="rating_label">Rating</string>
 
     <string name="stores_title">Our Locations</string>
     <string name="locations_count">4 locations across the city</string>
-    <string name="store_open">OPEN</string>
     <string name="store_hours">Mon–Sat: 09:00 – 21:00</string>
 
     <string name="store_1_name">D\'Classics Books — Sudirman</string>

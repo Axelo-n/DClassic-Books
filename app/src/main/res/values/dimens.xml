@@ -11,11 +11,6 @@
     <dimen name="space250">20dp</dimen>
     <dimen name="space300">24dp</dimen>
     <dimen name="space400">32dp</dimen>
-    <dimen name="space500">40dp</dimen>
-    <dimen name="space600">48dp</dimen>
-    <dimen name="space700">56dp</dimen>
-    <dimen name="space800">64dp</dimen>
-    <dimen name="space900">72dp</dimen>
 
     <dimen name="elevation_level5">12dp</dimen>
     <dimen name="elevation_level4">8dp</dimen>
