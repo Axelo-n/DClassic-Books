@@ -37,8 +37,11 @@
     <string name="btn_buy">Place Order</string>
     <string name="error_address_empty">Please enter your delivery address</string>
     <string name="error_phone_empty">Please enter your phone number</string>
+    <string name="error_phone_invalid">Please enter a valid phone number</string>
     <string name="error_dialog_title">Required Fields Missing</string>
     <string name="error_dialog_message">Please fill in all required fields before placing your order.</string>
+    <string name="error_dialog_invalid_title">Invalid Phone Number</string>
+    <string name="error_dialog_invalid_message">Please enter a valid phone number before placing your order.</string>
     <string name="order_success_title">Order Placed!</string>
     <string name="order_success_message">Your order has been received. We\'ll contact you shortly to confirm delivery details.</string>
     <string name="btn_ok">Great!</string>

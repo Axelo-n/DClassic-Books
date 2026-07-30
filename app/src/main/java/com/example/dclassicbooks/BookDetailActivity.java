@@ -81,21 +81,35 @@ public class BookDetailActivity extends AppCompatActivity {
             tilPhone.setError(null);
 
             boolean valid = true;
+            boolean hasEmptyError = false;
             if (address.isEmpty()) {
                 tilAddress.setError(getString(R.string.error_address_empty));
                 valid = false;
+                hasEmptyError = true;
             }
             if (phone.isEmpty()) {
                 tilPhone.setError(getString(R.string.error_phone_empty));
                 valid = false;
+                hasEmptyError = true;
+            } else if (!isPhoneValid(phone)) {
+                tilPhone.setError(getString(R.string.error_phone_invalid));
+                valid = false;
             }
 
             if (!valid) {
-                new AlertDialog.Builder(this)
-                        .setTitle(R.string.error_dialog_title)
-                        .setMessage(R.string.error_dialog_message)
-                        .setPositiveButton(android.R.string.ok, null)
-                        .show();
+                if (hasEmptyError) {
+                    new AlertDialog.Builder(this)
+                            .setTitle(R.string.error_dialog_title)
+                            .setMessage(R.string.error_dialog_message)
+                            .setPositiveButton(android.R.string.ok, null)
+                            .show();
+                } else {
+                    new AlertDialog.Builder(this)
+                            .setTitle(R.string.error_dialog_invalid_title)
+                            .setMessage(R.string.error_dialog_invalid_message)
+                            .setPositiveButton(android.R.string.ok, null)
+                            .show();
+                }
                 return;
             }
 
@@ -110,6 +124,21 @@ public class BookDetailActivity extends AppCompatActivity {
 
     private String getTextOrEmpty(Editable e) {
         return e == null ? "" : e.toString().trim();
+    }
+
+    private boolean isPhoneValid(String phone) {
+        if (phone == null || phone.isEmpty()) return false;
+        if (phone.contains(".")) return false;
+
+        int digitCount = 0;
+        for (char c : phone.toCharArray()) {
+            if (Character.isDigit(c)) {
+                digitCount++;
+            } else if (c != '+' && c != '-' && c != ' ' && c != '(' && c != ')') {
+                return false;
+            }
+        }
+        return digitCount >= 1;
     }
 }
 
